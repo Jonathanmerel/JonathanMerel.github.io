@@ -1,0 +1,290 @@
+/* Estilos minimalistas profesionales */
+:root {
+    --color-bg: #0a0a0a;
+    --color-surface: #111111;
+    --color-border: #262626;
+    --color-text: #f5f5f5;
+    --color-text-secondary: #a3a3a3;
+    --color-accent: #06b6d4;
+    --color-accent-hover: #0891b2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Efectos de reveal/scrolling */
+.reveal-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efectos parallax */
+.parallax-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 30% 20%, rgba(6, 182, 212, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(124, 58, 237, 0.1) 0%, transparent 50%);
+}
+
+.layer-2 {
+    background: radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 20% 80%, rgba(124, 58, 237, 0.05) 0%, transparent 50%);
+}
+
+.layer-3 {
+    background: radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.03) 0%, transparent 70%);
+}
+
+/* Animaciones de timeline */
+.timeline-line {
+    width: 2px;
+    transition: height 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-dot {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-dot.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Efectos hover avanzados */
+.project-visual {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-visual::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.1), transparent);
+    transition: left 0.7s ease;
+    z-index: 1;
+}
+
+.project-visual:hover::before {
+    left: 100%;
+}
+
+/* Header effects */
+header {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transform: translateY(0);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                background-color 0.5s ease;
+}
+
+header.hidden {
+    transform: translateY(-100%);
+}
+
+/* Smooth scrolling sections */
+section {
+    position: relative;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Gradient borders */
+.hover-gradient-border {
+    position: relative;
+    border: 1px solid transparent;
+    background: linear-gradient(var(--color-surface), var(--color-surface)) padding-box,
+                linear-gradient(45deg, var(--color-accent), transparent) border-box;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+p {
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+}
+
+/* Container */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Transitions */
+a, button, input, textarea, select {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #404040;
+}
+
+/* Form styles */
+input, textarea, select {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 1px rgba(6, 182, 212, 0.2);
+}
+
+/* Button styles */
+.btn-primary {
+    background: var(--color-accent);
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: var(--color-accent-hover);
+}
+
+.btn-outline {
+    border: 1px solid var(--color-border);
+    background: transparent;
+    color: var(--color-text);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 12px 24px;
+}
+
+.btn-outline:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+/* Navigation */
+nav a {
+    position: relative;
+    text-decoration: none;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    
+    .reveal-item {
+        transform: translateY(20px);
+    }
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Selection color */
+::selection {
+    background-color: rgba(6, 182, 212, 0.3);
+    color: white;
+}
+
+/* Accessibility */
+:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
