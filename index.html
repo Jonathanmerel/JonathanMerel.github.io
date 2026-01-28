@@ -46,7 +46,8 @@
                     <a href="https://www.linkedin.com/in/jonathan-merel-1747b426a/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
                         <i class="fab fa-linkedin text-xl"></i>
                     </a>
-                    <a href="https://medium.com" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <!-- Si usas Medium, pon tu enlace real; si no, quita esta línea -->
+                    <a href="#" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
                         <i class="fab fa-medium text-xl"></i>
                     </a>
                 </div>
@@ -71,7 +72,6 @@
                 <div class="flex items-center space-x-4 pt-4">
                     <a href="https://github.com/Jonathanmerel" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
                     <a href="https://www.linkedin.com/in/jonathan-merel-1747b426a/" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-xl"></i></a>
-                    <a href="https://medium.com" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-medium text-xl"></i></a>
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
             <h1 class="text-5xl md:text-7xl font-light tracking-tight mb-6">
                 <span class="block text-white">Jonathan Merel</span>
                 <span class="block text-cyan-500 font-normal mt-2 text-4xl md:text-6xl">Informática para la Gestión</span>
-                <span class="block text-white font-normal mt-1 text-4xl md:text-6xl">Soluciones Prácticas</span>
+                <span class="block text-white font-normal mt-1 text-4xl md:text-6xl">Soluciones Prácticas y Operativas</span>
             </h1>
            
             <div class="mb-10">
@@ -106,10 +106,11 @@
     </div>
 </section>
 
-<!-- Sección ABOUT -->
+<!-- Sección ABOUT (como te gustaba: foto + intereses + texto + tecnologías) -->
 <section id="about" class="py-32 border-t border-gray-900">
     <div class="container mx-auto px-6">
         <div class="max-w-6xl mx-auto">
+            <!-- Encabezado -->
             <div class="mb-16">
                 <div class="inline-flex items-center mb-4">
                     <div class="w-10 h-px bg-cyan-500"></div>
@@ -122,12 +123,12 @@
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-                <!-- Foto e intereses -->
+                <!-- Columna izquierda - Foto + Intereses -->
                 <div class="flex flex-col items-center lg:items-start">
                     <div class="mb-8">
                         <img src="191655148.png" alt="Jonathan Merel" class="profile-pic shadow-2xl rounded-full w-64 h-64 object-cover">
                     </div>
-                    <div class="w-full">
+                    <div class="w-full ("w-full")">
                         <h3 class="text-xl font-medium mb-4 text-gray-300">Fuera del trabajo</h3>
                         <div class="space-y-3">
                             <div class="flex items-center">
@@ -152,73 +153,38 @@
                     </div>
                 </div>
                 
-                <!-- Texto -->
+                <!-- Columna derecha - Texto + Tecnologías (id="skills" para el menú) -->
                 <div class="lg:col-span-2">
                     <p class="text-gray-300 text-lg mb-6 leading-relaxed">
-                        Actualmente estudio <span class="text-cyan-400 font-medium">informática aplicada a la gestión empresarial</span>, con un enfoque práctico en el apoyo operativo y administrativo apoyado por la tecnología. Me gusta trabajar de forma ordenada, responsable y orientada a resultados, utilizando herramientas digitales para organizar información, dar seguimiento a procesos y facilitar el trabajo en equipo.
+                        Actualmente estudio <span class="text-cyan-400 font-medium">informática aplicada a la gestión empresarial</span>, con un enfoque práctico en el apoyo operativo y administrativo apoyado por la tecnología. Me gusta trabajar de forma ordenada, responsable y orientada a resultados, utilizando herramientas digitales para organizar información, dar seguimiento a procesos y facilitar el trabajo en equipo. Tengo facilidad para aprender sistemas nuevos, adaptarme a procedimientos establecidos y aportar mejoras cuando es posible, con interés en crecer profesionalmente dentro de una institución sólida.
                     </p>
-                    <p class="text-gray-300 text-lg leading-relaxed">
-                        Tengo facilidad para aprender sistemas nuevos, adaptarme a procedimientos establecidos y aportar mejoras cuando es posible, con interés en crecer profesionalmente dentro de una institución sólida.
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        Estas son algunas de las tecnologías que tengo conocimiento técnico:
                     </p>
+
+                    <!-- Tecnologías (con id="skills" para el enlace del menú) -->
+                    <div id="skills" class="border border-gray-800 rounded-lg p-6">
+                        <h3 class="text-xl font-medium mb-6 text-center">Tecnologías y Herramientas</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                            <div class="text-center"><div class="tech-icon mx-auto"><i class="fab fa-python text-cyan-500 text-2xl"></i></div><h4 class="font-medium mb-1">Python</h4></div>
+                            <div class="text-center"><div class="tech-icon mx-auto"><i class="fab fa-js-square text-cyan-500 text-2xl"></i></div><h4 class="font-medium mb-1">JavaScript</h4></div>
+                            <div class="text-center"><div class="tech-icon mx-auto"><i class="fab fa-react text-cyan-500 text-2xl"></i></div><h4 class="font-medium mb-1">React.js</h4></div>
+                            <div class="text-center"><div class="tech-icon mx-auto"><i class="fab fa-java text-cyan-500 text-2xl"></i></div><h4 class="font-medium mb-1">Java</h4></div>
+                            <div class="text-center"><div class="tech-icon mx-auto"><i class="fas fa-code text-cyan-500 text-2xl"></i></div><h4 class="font-medium mb-1">TypeScript</h4></div>
+                            <div class="text-center"><div class="tech-icon mx-auto"><i class="fas fa-copyright text-cyan-500 text-2xl"></i></div><h4 class="font-medium mb-1">C#</h4></div>
+                            <div class="text-center"><div class="tech-icon mx-auto"><i class="fas fa-file-excel text-green-500 text-2xl"></i></div><h4 class="font-medium mb-1">Excel</h4></div>
+                            <div class="text-center"><div class="tech-icon mx-auto"><i class="fas fa-database text-blue-600 text-2xl"></i></div><h4 class="font-medium mb-1">SQL</h4></div>
+                            <div class="text-center"><div class="tech-icon mx-auto"><i class="fas fa-chart-bar text-yellow-500 text-2xl"></i></div><h4 class="font-medium mb-1">Power BI</h4></div>
+                            <div class="text-center"><div class="tech-icon mx-auto"><i class="fab fa-git-alt text-orange-500 text-2xl"></i></div><h4 class="font-medium mb-1">Git</h4></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Sección HABILIDADES -->
-<section id="skills" class="py-32 border-t border-gray-900">
-    <div class="container mx-auto px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="mb-16">
-                <div class="inline-flex items-center mb-4">
-                    <div class="w-10 h-px bg-cyan-500"></div>
-                    <span class="ml-4 text-sm font-medium text-cyan-500 tracking-wider">HABILIDADES</span>
-                </div>
-                <h2 class="text-4xl md:text-5xl font-light tracking-tight mb-6">
-                    Tecnologías y Herramientas<br>
-                    <span class="text-cyan-500">Que domino</span>
-                </h2>
-            </div>
-            
-            <div class="border border-gray-800 rounded-lg p-6">
-                <h3 class="text-xl font-medium mb-6 text-center">Tecnologías y Herramientas</h3>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                    <div class="text-center"><div class="tech-icon mx-auto"><i class="fab fa-python text-cyan-500 text-2xl"></i></div><h4 class="font-medium mb-1">Python</h4></div>
-                    <div class="text-center"><div class="tech-icon mx-auto"><i class="fab fa-js-square text-cyan-500 text-2xl"></i></div><h4 class="font-medium mb-1">JavaScript</h4></div>
-                    <div class="text-center"><div class="tech-icon mx-auto"><i class="fab fa-react text-cyan-500 text-2xl"></i></div><h4 class="font-medium mb-1">React.js</h4></div>
-                    <div class="text-center"><div class="tech-icon mx-auto"><i class="fab fa-java text-cyan-500 text-2xl"></i></div><h4 class="font-medium mb-1">Java</h4></div>
-                    <div class="text-center"><div class="tech-icon mx-auto"><i class="fas fa-code text-cyan-500 text-2xl"></i></div><h4 class="font-medium mb-1">TypeScript</h4></div>
-                    <div class="text-center"><div class="tech-icon mx-auto"><i class="fas fa-copyright text-cyan-500 text-2xl"></i></div><h4 class="font-medium mb-1">C#</h4></div>
-                    <div class="text-center"><div class="tech-icon mx-auto"><i class="fas fa-file-excel text-green-500 text-2xl"></i></div><h4 class="font-medium mb-1">Excel</h4></div>
-                    <div class="text-center"><div class="tech-icon mx-auto"><i class="fas fa-database text-blue-600 text-2xl"></i></div><h4 class="font-medium mb-1">SQL</h4></div>
-                    <div class="text-center"><div class="tech-icon mx-auto"><i class="fas fa-chart-bar text-yellow-500 text-2xl"></i></div><h4 class="font-medium mb-1">Power BI</h4></div>
-                    <div class="text-center"><div class="tech-icon mx-auto"><i class="fab fa-git-alt text-orange-500 text-2xl"></i></div><h4 class="font-medium mb-1">Git</h4></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Sección PROYECTOS -->
-<section id="projects" class="py-32 border-t border-gray-900">
-    <div class="container mx-auto px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="mb-16">
-                <div class="inline-flex items-center mb-4">
-                    <div class="w-10 h-px bg-cyan-500"></div>
-                    <span class="ml-4 text-sm font-medium text-cyan-500 tracking-wider">PROYECTOS</span>
-                </div>
-                <h2 class="text-4xl md:text-5xl font-light tracking-tight mb-6">
-                    Proyectos Personales<br>
-                    <span class="text-cyan-500">Aplicando tecnología a problemas reales</span>
-                </h2>
-            </div>
-            
-            <!-- Grid de proyectos (mismo que tenías, sin cambios) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Tus 6 proyectos aquí (los mantengo idénticos) -->
-                <!-- Sección proyectos personales -->
+<!-- Sección PROYECTOS (separada) -->
 <section id="projects" class="py-32 border-t border-gray-900">
     <div class="container mx-auto px-6">
         <div class="max-w-6xl mx-auto">
@@ -236,8 +202,7 @@
 
             <!-- Grid de proyectos -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Proyecto 1: Portal de Ciberseguridad -->
+                <!-- Proyecto 1 -->
                 <div class="border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-300">
                     <div class="p-6">
                         <div class="mb-4">
@@ -258,7 +223,7 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 2: Plataforma Empresarial -->
+                <!-- Proyecto 2 -->
                 <div class="border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-300">
                     <div class="p-6">
                         <div class="mb-4">
@@ -280,7 +245,7 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 3: Gestor de Contraseñas -->
+                <!-- Proyecto 3 -->
                 <div class="border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-300">
                     <div class="p-6">
                         <div class="mb-4">
@@ -301,7 +266,7 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 4: Dashboard Power BI / Excel -->
+                <!-- Proyecto 4 -->
                 <div class="border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-300">
                     <div class="p-6">
                         <div class="mb-4">
@@ -322,7 +287,7 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 5: Automatización con Python -->
+                <!-- Proyecto 5 -->
                 <div class="border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-300">
                     <div class="p-6">
                         <div class="mb-4">
@@ -344,7 +309,7 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 6: Sistema con SQL -->
+                <!-- Proyecto 6 -->
                 <div class="border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-300">
                     <div class="p-6">
                         <div class="mb-4">
@@ -364,26 +329,31 @@
                         </a>
                     </div>
                 </div>
+            </div>
 
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-            </div>
+            <!-- Nota importante -->
+            <div class="mt-16 p-6 border border-cyan-500/20 bg-cyan-500/5 rounded-lg">
+                <div class="flex items-start">
+                    <div class="mr-4 text-cyan-500">
+                        <i class="fas fa-lightbulb text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-medium mb-2">Creo cosas con propósito</h4>
+                        <p class="text-gray-400">
+                            Cada proyecto nace de una necesidad real: mejorar procesos, organizar información o aportar valor práctico en entornos empresariales.
+                        </p>
                     </div>
                 </div>
             </div>
+
+            <!-- Footer -->
+            <div class="mt-12 pt-8 border-t border-gray-900 text-center text-sm text-gray-500">
+                <p>&copy; Built and designed by Jonathan Merel.</p>
+                <p class="mt-2">All rights reserved. ©</p>
+            </div>
         </div>
     </div>
 </section>
-
-<!-- Footer -->
-<footer class="py-12 border-t border-gray-900 text-center text-sm text-gray-500">
-    <p>&copy; Built and designed by Jonathan Merel.</p>
-    <p class="mt-2">All rights reserved. ©</p>
-</footer>
 
 <script>
     // Menú móvil
@@ -410,6 +380,7 @@
 </script>
 </body>
 </html>
+
 
 
 
