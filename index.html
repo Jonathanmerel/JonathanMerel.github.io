@@ -1,433 +1,246 @@
 <!DOCTYPE html>
-<html lang="es" class="dark">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan Merel | Portfolio - Soluciones TI & Gestión Empresarial</title>
-    <meta name="description" content="Estudiante de informática aplicada a la gestión empresarial. Soluciones prácticas con tecnología para procesos operativos y administrativos.">
+    <title>Jonathan Merel | Desarrollador Junior - Soluciones Digitales para Gestión Empresarial</title>
+    <meta name="description" content="Desarrollador junior especializado en soluciones tecnológicas para optimización de procesos empresariales y educativos. React, Firebase, Python, Power BI y más.">
     <meta name="author" content="Jonathan Merel">
-   
+    <meta name="keywords" content="desarrollador junior, informática empresarial, React, Firebase, Python, Power BI, Panamá">
+
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔹</text></svg>">
-   
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔹</text></svg>">
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-   
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-   
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body class="dark bg-neutral-950 text-gray-100 font-sans overflow-x-hidden">
-   
-<!-- MENÚ -->
-<header class="fixed w-full z-50 bg-neutral-950/95 backdrop-blur-sm border-b border-gray-900">
-    <nav class="container mx-auto px-6 py-3">
-        <div class="flex justify-between items-center">
-            <!-- Logo -->
-            <a href="#hero" class="text-white font-medium tracking-tight">Jonathan Merel</a>
-            
-            <!-- Navegación escritorio -->
-            <div class="hidden md:flex items-center space-x-10">
-                <a href="#hero" class="text-gray-300 hover:text-white text-xs font-medium tracking-wider uppercase transition-colors duration-300">Inicio</a>
-                <a href="#about" class="text-gray-300 hover:text-white text-xs font-medium tracking-wider uppercase transition-colors duration-300">Acerca de</a>
-                <a href="#experiencia" class="text-gray-300 hover:text-white text-xs font-medium tracking-wider uppercase transition-colors duration-300">Experiencia</a>
-                <a href="#projects" class="text-gray-300 hover:text-white text-xs font-medium tracking-wider uppercase transition-colors duration-300">Proyectos</a>
-               
-                <!-- Redes sociales -->
-                <div class="flex items-center space-x-4 ml-4">
-                    <a href="https://github.com/Jonathanmerel" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
-                        <i class="fab fa-github text-xl"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/jonathan-merel-1747b426a/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
-                        <i class="fab fa-linkedin text-xl"></i>
-                    </a>
-                </div>
-            </div>
-           
-            <!-- Botón menú móvil -->
-            <button id="mobile-menu-btn" class="md:hidden text-gray-400 hover:text-white transition-colors duration-300">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
-       
-        <!-- Menú móvil -->
-        <div id="mobile-menu" class="md:hidden hidden mt-3 pb-3 border-t border-gray-800 pt-4">
-            <div class="flex flex-col space-y-3">
-                <a href="#hero" class="text-gray-400 hover:text-white py-1 text-xs font-medium tracking-wider uppercase transition-colors duration-300">Inicio</a>
-                <a href="#about" class="text-gray-400 hover:text-white py-1 text-xs font-medium tracking-wider uppercase transition-colors duration-300">Acerca de</a>
-                <a href="#experiencia" class="text-gray-400 hover:text-white py-1 text-xs font-medium tracking-wider uppercase transition-colors duration-300">Experiencia</a>
-                <a href="#projects" class="text-gray-400 hover:text-white py-1 text-xs font-medium tracking-wider uppercase transition-colors duration-300">Proyectos</a>
-               
-                <div class="flex items-center space-x-4 pt-4">
-                    <a href="https://github.com/Jonathanmerel" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
-                    <a href="https://www.linkedin.com/in/jonathan-merel-1747b426a/" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-xl"></i></a>
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
-
-<!-- Hero Section -->
-<section id="hero" class="min-h-screen flex items-center pt-20 relative overflow-hidden">
-    <div class="container mx-auto px-6 relative z-10">
-        <div class="max-w-4xl">
-            <div class="inline-flex items-center mb-8 space-x-2">
-                <div class="w-3 h-3 bg-cyan-500"></div>
-                <span class="text-sm font-medium text-gray-400 tracking-wider"></span>
-            </div>
-           
-            <h1 class="text-5xl md:text-7xl font-light tracking-tight mb-6">
-                <span class="block text-white">Hola, <span class="text-cyan-400 font-medium">soy Jonathan</span>.
-                <span class="block text-white font-normal mt-1 text-4xl md:text-6xl"></span>
-            </h1>
-           
-            <div class="mb-10">
-                <p class="text-xl text-gray-400 mb-6 max-w-2xl leading-relaxed">
-                    Estudiante de Informática para la Gestión | Desarrollo de soluciones tecnológicas para procesos empresariales y educativos
-                </p>
-            </div>
-           
-            <a href="mailto:merelyonathan13@gmail.com" class="px-8 py-3 border border-gray-700 hover:border-cyan-500 text-gray-300 hover:text-cyan-500 font-medium text-sm tracking-wider transition-all duration-300">
-                ¡Saluda!
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- Sección ABOUT (como te gustaba originalmente: texto + foto + intereses) -->
-<section id="about" class="py-32 border-t border-gray-900">
-    <div class="container mx-auto px-6">
-        <div class="max-w-6xl mx-auto">
-            <!-- Encabezado -->
-            <div class="mb-16">
-                <div class="inline-flex items-center mb-4">
-                    <div class="w-10 h-px bg-cyan-500"></div>
-                    <span class="ml-4 text-sm font-medium text-cyan-500 tracking-wider">ACERCA DE</span>
-                </div>
-                <h2 class="text-4xl md:text-5xl font-light tracking-tight mb-6">
-                    <br>
-                    <span class="text-cyan-500"></span>
-                </h2>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-                <!-- Columna izquierda - Foto + Intereses -->
-                <div class="flex flex-col items-center lg:items-start">
-                    <div class="mb-8">
-                        <img src="191655148.png" alt="Jonathan Merel" class="profile-pic shadow-2xl rounded-full w-64 h-64 object-cover">
-                    </div>
-                    <div class="w-full">
-                        <h3 class="text-xl font-medium mb-4 text-gray-300">Fuera del abbreviated trabajo</h3>
-                        <div class="space-y-3">
-                            <div class="flex items-center">
-                                <div class="w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center mr-3">
-                                    <i class="fas fa-gamepad text-cyan-500 text-sm"></i>
-                                </div>
-                                <span class="text-gray-300">Juegos battle royale</span>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center mr-3">
-                                    <i class="fas fa-book text-cyan-500 text-sm"></i>
-                                </div>
-                                <span class="text-gray-300">Ficción literaria</span>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center mr-3">
-                                    <i class="fas fa-mobile-alt text-cyan-500 text-sm"></i>
-                                </div>
-                                <span class="text-gray-300">Gadgets tecnológicos</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<body class="bg-neutral-950 text-gray-100 min-h-screen">
+    <!-- Menú fijo -->
+    <header class="fixed w-full z-50 bg-neutral-950/95 backdrop-blur-sm border-b border-gray-900">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#hero" class="text-xl font-semibold text-white">Jonathan Merel</a>
                 
-                <!-- Columna derecha - Texto -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#hero" class="text-gray-400 hover:text-cyan-400 transition">Inicio</a>
+                    <a href="#about" class="text-gray-400 hover:text-cyan-400 transition">Acerca</a>
+                    <a href="#skills" class="text-gray-400 hover:text-cyan-400 transition">Habilidades</a>
+                    <a href="#projects" class="text-gray-400 hover:text-cyan-400 transition">Proyectos</a>
+                    <a href="#contact" class="text-gray-400 hover:text-cyan-400 transition">Contacto</a>
+                    <div class="flex space-x-4 ml-6">
+                        <a href="https://github.com/Jonathanmerel" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
+                        <a href="https://www.linkedin.com/in/jonathan-merel-1747b426a/" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-xl"></i></a>
+                    </div>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-gray-400 hover:text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="md:hidden hidden mt-6 pb-4 border-t border-gray-800 pt-6">
+                <div class="flex flex-col space-y-4">
+                    <a href="#hero" class="text-gray-400 hover:text-cyan-400">Inicio</a>
+                    <a href="#about" class="text-gray-400 hover:text-cyan-400">Acerca</a>
+                    <a href="#skills" class="text-gray-400 hover:text-cyan-400">Habilidades</a>
+                    <a href="#projects" class="text-gray-400 hover:text-cyan-400">Proyectos</a>
+                    <a href="#contact" class="text-gray-400 hover:text-cyan-400">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl">
+                <h1 class="text-5xl md:text-7xl font-light leading-tight mb-6">
+                    Hola, soy <span class="text-cyan-400 font-semibold">Jonathan Merel</span>.<br>
+                    <span class="text-4xl md:text-6xl">Desarrollo soluciones digitales que optimizan procesos.</span>
+                </h1>
+                <p class="text-xl text-gray-400 mb-10 max-w-2xl">
+                    Especializado en desarrollo web full-stack, análisis de datos y automatización para entornos empresariales y educativos.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="px-8 py-4 bg-cyan-500/20 border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white font-medium transition rounded-lg">
+                        Contáctame
+                    </a>
+                    <a href="https://github.com/Jonathanmerel" target="_blank" class="px-8 py-4 border border-gray-700 text-gray-300 hover:border-cyan-500 hover:text-cyan-400 font-medium transition rounded-lg">
+                        Ver GitHub →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-32 border-t border-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+                <div class="flex flex-col items-center lg:items-start">
+                    <img src="191655148.png" alt="Foto profesional de Jonathan Merel" class="w-64 h-64 rounded-full object-cover shadow-2xl mb-8">
+                    <h3 class="text-xl font-medium mb-6 text-gray-300">Fuera del código</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3"><i class="fas fa-gamepad text-cyan-500"></i><span>Juegos battle royale</span></div>
+                        <div class="flex items-center gap-3"><i class="fas fa-book text-cyan-500"></i><span>Ficción literaria</span></div>
+                        <div class="flex items-center gap-3"><i class="fas fa-mobile-alt text-cyan-500"></i><span>Gadgets tecnológicos</span></div>
+                    </div>
+                </div>
+
                 <div class="lg:col-span-2">
-                    <p class="text-gray-300 text-lg mb-6 leading-relaxed">
-                        Actualmente estudio <span class="text-cyan-400 font-medium">informática aplicada a la gestión empresarial</span>, con un enfoque práctico en el apoyo operativo y administrativo apoyado por la tecnología. Me gusta trabajar de forma ordenada, responsable y orientada a resultados, utilizando herramientas digitales para organizar información, dar seguimiento a procesos y facilitar el trabajo en equipo. Tengo facilidad para aprender sistemas nuevos, adaptarme a procedimientos establecidos y aportar mejoras cuando es posible, con interés en crecer profesionalmente dentro de una institución sólida.
+                    <h2 class="text-4xl font-light mb-8">Acerca de mí</h2>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        Soy un profesional en formación en <strong class="text-cyan-400">Informática para la Gestión Educativa y Empresarial</strong>, especializado en el desarrollo de soluciones digitales que optimizan procesos operativos y administrativos. 
+                        Combino habilidades técnicas en desarrollo web (React, Firebase) y análisis de datos (Power BI, SQL) con un enfoque práctico en resultados reales.
                     </p>
-                    <p class="text-gray-400 mb-8 leading-relaxed">
+                    <p class="text-gray-400 leading-relaxed">
+                        He implementado sistemas que reducen el caos operativo, mejoran la eficiencia del equipo y facilitan la toma de decisiones basadas en datos. Busco contribuir desde el primer día en proyectos que necesiten automatización, organización digital o desarrollo de herramientas internas.
                     </p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Sección EXPERIENCIA (diseño mejorado: tarjetas con hover, sombra, escala y colores diferenciados) -->
-<section id="experiencia" class="py-32 border-t border-gray-900">
-    <div class="container mx-auto px-6">
-        <div class="max-w-6xl mx-auto">
-            <!-- Encabezado -->
-            <div class="mb-16">
-                <div class="inline-flex items-center mb-4">
-                    <div class="w-10 h-px bg-cyan-500"></div>
-                    <span class="ml-4 text-sm font-medium text-cyan-500 tracking-wider">EXPERIENCIA</span>
+    <!-- Skills -->
+    <section id="skills" class="py-32 border-t border-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-light mb-16 text-center">Habilidades Técnicas</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+                <div class="group bg-gray-900/50 border border-gray-800 rounded-xl p-6 text-center hover:border-cyan-500/50 hover:bg-gray-800/80 hover:scale-105 transition-all">
+                    <i class="fab fa-python text-4xl text-cyan-500 mb-3"></i>
+                    <p class="font-medium">Python</p>
                 </div>
-                <h2 class="text-4xl md:text-5xl font-light tracking-tight mb-6">
-                    Experiencia Técnica<br>
-                    <span class="text-cyan-500"></span>
-                </h2>
-            </div>
-
-            <!-- Grid de tarjetas con diseño premium -->
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                <!-- Cada habilidad como tarjeta con hover -->
-                <div class="group border border-gray-800 rounded-xl p-6 bg-gray-900/50 hover:bg-gray-800/80 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
-                    <i class="fab fa-python text-cyan-500 text-4xl mb-3 group-hover:text-cyan-400 transition-colors"></i>
-                    <h4 class="font-medium text-gray-200">Python</h4>
-               </div>
-                <div class="group border border-gray-800 rounded-xl p-6 bg-gray-900/50 hover:bg-gray-800/80 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
-                    <i class="fab fa-js-square text-cyan-500 text-4xl mb-3 group-hover:text-cyan-400 transition-colors"></i>
-                    <h4 class="font-medium text-gray-200">JavaScript</h4>
+                <div class="group bg-gray-900/50 border border-gray-800 rounded-xl p-6 text-center hover:border-cyan-500/50 hover:bg-gray-800/80 hover:scale-105 transition-all">
+                    <i class="fab fa-js-square text-4xl text-cyan-500 mb-3"></i>
+                    <p class="font-medium">JavaScript</p>
                 </div>
-                <div class="group border border-gray-800 rounded-xl p-6 bg-gray-900/50 hover:bg-gray-800/80 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
-                    <i class="fab fa-react text-cyan-500 text-4xl mb-3 group-hover:text-cyan-400 transition-colors"></i>
-                    <h4 class="font-medium text-gray-200">React.js</h4>
+                <div class="group bg-gray-900/50 border border-gray-800 rounded-xl p-6 text-center hover:border-cyan-500/50 hover:bg-gray-800/80 hover:scale-105 transition-all">
+                    <i class="fab fa-react text-4xl text-cyan-500 mb-3"></i>
+                    <p class="font-medium">React.js</p>
                 </div>
-                <div class="group border border-gray-800 rounded-xl p-6 bg-gray-900/50 hover:bg-gray-800/80 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
-                    <i class="fab fa-java text-cyan-500 text-4xl mb-3 group-hover:text-cyan-400 transition-colors"></i>
-                    <h4 class="font-medium text-gray-200">Java</h4>
+                <div class="group bg-gray-900/50 border border-gray-800 rounded-xl p-6 text-center hover:border-cyan-500/50 hover:bg-gray-800/80 hover:scale-105 transition-all">
+                    <i class="fas fa-database text-4xl text-blue-500 mb-3"></i>
+                    <p class="font-medium">SQL</p>
                 </div>
-                <div class="group border border-gray-800 rounded-xl p-6 bg-gray-900/50 hover:bg-gray-800/80 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
-                    <i class="fas fa-code text-cyan-500 text-4xl mb-3 group-hover:text-cyan-400 transition-colors"></i>
-                    <h4 class="font-medium text-gray-200">TypeScript</h4>
+                <div class="group bg-gray-900/50 border border-gray-800 rounded-xl p-6 text-center hover:border-cyan-500/50 hover:bg-gray-800/80 hover:scale-105 transition-all">
+                    <i class="fas fa-chart-bar text-4xl text-yellow-500 mb-3"></i>
+                    <p class="font-medium">Power BI</p>
                 </div>
-                <div class="group border border-gray-800 rounded-xl p-6 bg-gray-900/50 hover:bg-gray-800/80 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
-                    <i class="fas fa-copyright text-cyan-500 text-4xl mb-3 group-hover:text-cyan-400 transition-colors"></i>
-                    <h4 class="font-medium text-gray-200">C#</h4>
+                <div class="group bg-gray-900/50 border border-gray-800 rounded-xl p-6 text-center hover:border-cyan-500/50 hover:bg-gray-800/80 hover:scale-105 transition-all">
+                    <i class="fab fa-git-alt text-4xl text-orange-500 mb-3"></i>
+                    <p class="font-medium">Git</p>
                 </div>
-                <div class="group border border-gray-800 rounded-xl p-6 bg-gray-900/50 hover:bg-gray-800/80 hover:border-green-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/20">
-                    <i class="fas fa-file-excel text-green-500 text-4xl mb-3 group-hover:text-green-400 transition-colors"></i>
-                    <h4 class="font-medium text-gray-200">Excel</h4>
+                <div class="group bg-gray-900/50 border border-gray-800 rounded-xl p-6 text-center hover:border-cyan-500/50 hover:bg-gray-800/80 hover:scale-105 transition-all">
+                    <i class="fab fa-java text-4xl text-cyan-500 mb-3"></i>
+                    <p class="font-medium">Java</p>
                 </div>
-                <div class="group border border-gray-800 rounded-xl p-6 bg-gray-900/50 hover:bg-gray-800/80 hover:border-blue-600/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-600/20">
-                    <i class="fas fa-database text-blue-600 text-4xl mb-3 group-hover:text-blue-400 transition-colors"></i>
-                    <h4 class="font-medium text-gray-200">SQL</h4>
+                <div class="group bg-gray-900/50 border border-gray-800 rounded-xl p-6 text-center hover:border-cyan-500/50 hover:bg-gray-800/80 hover:scale-105 transition-all">
+                    <i class="fas fa-fire text-4xl text-red-500 mb-3"></i>
+                    <p class="font-medium">Firebase</p>
                 </div>
-                <div class="group border border-gray-800 rounded-xl p-6 bg-gray-900/50 hover:bg-gray-800/80 hover:border-yellow-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-500/20">
-                    <i class="fas fa-chart-bar text-yellow-500 text-4xl mb-3 group-hover:text-yellow-400 transition-colors"></i>
-                    <h4 class="font-medium text-gray-200">Power BI</h4>
+                <div class="group bg-gray-900/50 border border-gray-800 rounded-xl p-6 text-center hover:border-green-500/50 hover:bg-gray-800/80 hover:scale-105 transition-all">
+                    <i class="fas fa-file-excel text-4xl text-green-500 mb-3"></i>
+                    <p class="font-medium">Excel Avanzado</p>
                 </div>
-                <div class="group border border-gray-800 rounded-xl p-６ bg-gray-900/50 hover:bg-gray-800/80 hover:border-orange-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/20">
-                    <i class="fab fa-git-alt text-orange-500 text-4xl mb-3 group-hover:text-orange-400 transition-colors"></i>
-                    <h4 class="font-medium text-gray-200">Git</h4>
+                <div class="group bg-gray-900/50 border border-gray-800 rounded-xl p-6 text-center hover:border-cyan-500/50 hover:bg-gray-800/80 hover:scale-105 transition-all">
+                    <i class="fas fa-lock text-4xl text-purple-500 mb-3"></i>
+                    <p class="font-medium">CryptoJS</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Sección PROYECTOS -->
-<section id="projects" class="py-32 border-t border-gray-900">
-    <div class="container mx-auto px-6">
-        <div class="max-w-6xl mx-auto">
-            <!-- Encabezado -->
-            <div class="mb-16">
-                <div class="inline-flex items-center mb-4">
-                    <div class="w-10 h-px bg-cyan-500"></div>
-                    <span class="ml-4 text-sm font-medium text-cyan-500 tracking-wider">PROYECTOS PERSONALES</span>
-                </div>
-                <h2 class="text-4xl md:text-5xl font-light tracking-tight mb-6">
-                    <br>
-                    <span class="text-cyan-500"></span>
-                </h2>
-            </div>
-
-            <!-- Grid de proyectos (completo) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Proyecto 1 -->
-                <div class="border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-300">
-                    <div class="p-6">
-                        <div class="mb-4">
-                            <span class="inline-block px-3 py-1 bg-cyan-500/20 text-cyan-400 text-xs font-medium rounded-full">Educativo</span>
+    <!-- Projects -->
+    <section id="projects" class="py-32 border-t border-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-light mb-16 text-center">Proyectos Destacados</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="border border-gray-800 rounded-xl overflow-hidden hover:border-cyan-500/50 transition">
+                    <div class="p-8">
+                        <span class="inline-block px-4 py-1 bg-cyan-500/20 text-cyan-400 text-xs font-medium rounded-full mb-4">Ciberseguridad</span>
+                        <h3 class="text-xl font-semibold mb-3">CyberTips - Portal Educativo</h3>
+                        <p class="text-gray-400 text-sm mb-6">Sitio web con guías prácticas de seguridad informática para usuarios y empresas.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded">HTML/CSS</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded">JavaScript</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded">GitHub Pages</span>
                         </div>
-                        <h3 class="text-xl font-medium mb-3">Portal de Ciberseguridad - CyberTips</3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            Sitio web educativo con consejos prácticos de seguridad informática para usuarios finales y pequeñas empresas.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs">HTML/CSS</span>
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs">JavaScript</span>
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs">GitHub Pages</span>
-                        </div>
-                        <a href="https://jonathanmerel.github.io/CyberTips.github.io/" class="text-cyan-500 text-sm font-medium inline-flex items-center">
-                            Ver proyecto <span class="ml-2">→</span>
+                        <a href="https://jonathanmerel.github.io/CyberTips.github.io/" target="_blank" class="text-cyan-400 font-medium flex items-center hover:underline">
+                            Ver proyecto → 
                         </a>
                     </div>
                 </div>
 
-                <!-- Proyecto 2 -->
-                <div class="border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-300">
-                    <div class="p-6">
-                        <div class="mb-4">
-                            <span class="inline-block px-3 py-1 bg-green-500/20 text-green-400 text-xs font-medium rounded-full">Gestión Empresarial</span>
+                <div class="border border-gray-800 rounded-xl overflow-hidden hover:border-cyan-500/50 transition">
+                    <div class="p-8">
+                        <span class="inline-block px-4 py-1 bg-green-500/20 text-green-400 text-xs font-medium rounded-full mb-4">Gestión Empresarial</span>
+                        <h3 class="text-xl font-semibold mb-3">Plataforma de Organización Digital</h3>
+                        <p class="text-gray-400 text-sm mb-6">Sistema full-stack para centralizar tareas, evidencias y reportes en una empresa de mantenimiento.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded">React.js</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded">Firebase</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded">Trello API</span>
                         </div>
-                        <h3 class="text-xl font-medium mb-3">Plataforma de Organización Digital</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            Sistema completo para una empresa de mantenimiento que centraliza evidencias, tareas y reportes, reduciendo el caos operativo.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs">React</span>
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs">Firebase</span>
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs">Backend</span>
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs">Trello</span>
-                        </div>
-                        <a href="#" class="text-cyan-500 text-sm font-medium inline-flex items-center">
-                            En desarrollo <span class="ml-2">→</span>
-                        </a>
+                        <a href="#" class="text-cyan-400 font-medium flex items-center">En desarrollo →</a>
                     </div>
                 </div>
 
-                <!-- Proyecto 3 -->
-                <div class="border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-300">
-                    <div class="p-6">
-                        <div class="mb-4">
-                            <span class="inline-block px-3 py-1 bg-green-500/20 text-green-400 text-xs font-medium rounded-full">Seguridad</span>
+                <div class="border border-gray-800 rounded-xl overflow-hidden hover:border-cyan-500/50 transition">
+                    <div class="p-8">
+                        <span class="inline-block px-4 py-1 bg-purple-500/20 text-purple-400 text-xs font-medium rounded-full mb-4">Seguridad</span>
+                        <h3 class="text-xl font-semibold mb-3">Gestor Seguro de Contraseñas</h3>
+                        <p class="text-gray-400 text-sm mb-6">Aplicación local con encriptación AES para almacenamiento seguro de credenciales.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded">JavaScript</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded">CryptoJS</span>
                         </div>
-                        <h3 class="text-xl font-medium mb-3">Gestor Seguro de Contraseñas</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            Aplicación local con encriptación AES para almacenar credenciales de forma segura y accesible.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs">JavaScript</span>
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs">CryptoJS</span>
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs">UI/UX</span>
-                        </div>
-                        <a href="#" class="text-cyan-500 text-sm font-medium inline-flex items-center">
-                            En desarrollo <span class="ml-2">→</span>
-                        </a>
+                        <a href="#" class="text-cyan-400 font-medium flex items-center">En desarrollo →</a>
                     </div>
                 </div>
-
-                <!-- Proyecto 4 -->
-                <div class="border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-300">
-                    <div class="p-6">
-                        <div class="mb-4">
-                            <span class="inline-block px-3 py-1 bg-yellow-500/20 text-yellow-400 text-xs font-medium rounded-full"></span>
-                        </div>
-                        <h3 class="text-xl font-medium mb-3">En desarrollo</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs"></span>
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs"></span>
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs"></span>
-                        </div>
-                        <a href="#" class="text-cyan-500 text-sm font-medium inline-flex items-center">
-                            En desarrollo <span class="ml-2">→</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Proyecto 5 -->
-                <div class="border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-300">
-                    <div class="p-6">
-                        <div class="mb-4">
-                            <span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-medium rounded-full"></span>
-                        </div>
-                        <h3 class="text-xl font-medium mb-3">En desarrollo</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs"></span>
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs"></span>
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs"></span>
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs"></span>
-                        </div>
-                        <a href="#" class="text-cyan-500 text-sm font-medium inline-flex items-center">
-                            En desarrollo <span class="ml-2">→</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Proyecto 6 -->
-                <div class="border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-300">
-                    <div class="p-6">
-                        <div class="mb-4">
-                            <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-medium rounded-full"></span>
-                        </div>
-                        <h3 class="text-xl font-medium mb-3">En Desarrollo</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs"></span>
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs"></span>
-                            <span class="px-2 py-1 bg-gray-900 text-gray-300 text-xs"></span>
-                        </div>
-                        <a href="#" class="text-cyan-500 text-sm font-medium inline-flex items-center">
-                            En desarrollo <span class="ml-2">→</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Nota importante -->
-            <div class="mt-16 p-6 border border-cyan-500/20 bg-cyan-500/5 rounded-lg">
-                <div class="flex items-start">
-                    <div class="mr-4 text-cyan-500">
-                        <i class="fas fa-lightbulb text-xl"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-medium mb-2">Creo cosas con propósito</h4>
-                        <p class="text-gray-400">
-                            Cada proyecto nace de una necesidad real: mejorar procesos, organizar información o aportar valor práctico en entornos empresariales.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="mt-12 pt-8 border-t border-gray-900 text-center text-sm text-gray-500">
-                <p>&copy; Built and designed by Jonathan Merel.</p>
-                <p class="mt-2">All rights reserved. ©</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<script>
-    // Menú móvil
-    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-        document.getElementById('mobile-menu').classList.toggle('hidden');
-    });
-    
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            const target = document.querySelector(targetId);
-            if (target) {
-                window.scrollTo({
-                    top: target.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-                document.getElementById('mobile-menu').classList.add('hidden');
-            }
+    <!-- Contact -->
+    <section id="contact" class="py-32 border-t border-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-light mb-8">¿Hablamos?</h2>
+            <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                Estoy disponible para roles junior en desarrollo web, análisis de datos o gestión de procesos digitales.
+            </p>
+            <a href="mailto:merelyonathan13@gmail.com" class="inline-block px-10 py-5 bg-cyan-500 text-black font-semibold rounded-lg hover:bg-cyan-400 transition">
+                Envíame un email
+            </a>
+            <p class="mt-8 text-gray-500">© 2026 Jonathan Merel. Todos los derechos reservados.</p>
+        </div>
+    </section>
+
+    <script>
+        // Menú móvil
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
         });
-    });
-</script>
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
