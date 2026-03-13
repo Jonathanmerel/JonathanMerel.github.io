@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan Merel | Desarrollador Junior </title>
+    <title>Jonathan Merel | Desarrollador Junior & Transformación Digital</title>
     <meta name="description" content="Desarrollador junior especializado en soluciones tecnológicas para optimización de procesos empresariales y educativos. React, Firebase, Python, Power BI y más.">
     <meta name="author" content="Jonathan Merel">
     <meta name="keywords" content="desarrollador junior, informática empresarial, React, Firebase, Python, Power BI, Panamá">
@@ -12,197 +12,216 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔹</text></svg>">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-neutral-950 text-gray-100 min-h-screen">
-    <!-- Menú fijo -->
-    <header class="fixed w-full z-50 bg-neutral-950/95 backdrop-blur-sm border-b border-gray-900">
-        <nav class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <a href="#hero" class="text-xl font-semibold text-white">Jonathan Merel</a>
-                
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#hero" class="text-gray-400 hover:text-cyan-400 transition">Inicio</a>
-                    <a href="#about" class="text-gray-400 hover:text-cyan-400 transition">Acerca</a>
-                    <a href="#skills" class="text-gray-400 hover:text-cyan-400 transition">Habilidades</a>
-                    <a href="#projects" class="text-gray-400 hover:text-cyan-400 transition">Proyectos</a>
-                    <div class="flex space-x-4 ml-6">
-                        <a href="https://github.com/Jonathanmerel" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
-                        <a href="https://www.linkedin.com/in/jonathan-merel-1747b426a/" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-xl"></i></a>
-                    </div>
-                </div>
-
-                <button id="mobile-menu-btn" class="md:hidden text-gray-400 hover:text-white">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
-
-            <div id="mobile-menu" class="md:hidden hidden mt-6 pb-4 border-t border-gray-800 pt-6">
-                <div class="flex flex-col space-y-4">
-                    <a href="#hero" class="text-gray-400 hover:text-cyan-400">Inicio</a>
-                    <a href="#about" class="text-gray-400 hover:text-cyan-400">Acerca</a>
-                    <a href="#skills" class="text-gray-400 hover:text-cyan-400">Habilidades</a>
-                    <a href="#projects" class="text-gray-400 hover:text-cyan-400">Proyectos</a>
+<body>
+    <!-- Menú fijo estilo Apple -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#hero" class="logo">Jonathan Merel</a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Inicio</a></li>
+                    <li><a href="#about" class="nav-link">Acerca</a></li>
+                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="nav-social">
+                    <a href="https://github.com/Jonathanmerel" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jonathan-merel-1747b426a/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menú">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
     </header>
 
-<!-- About -->
-<section id="about" class="py-32 border-t border-gray-900">
-    <div class="container mx-auto px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
-
-            <!-- Texto principal -->
-            <div class="lg:col-span-2">
-                <h2 class="text-4xl font-light mb-8">Acerca de mí</h2>
-                <p class="text-lg text-gray-300 leading-relaxed mb-6">
-                    Soy estudiante de <strong class="text-cyan-400">Informática para la Gestión Educativa y Empresarial</strong>, enfocado en el desarrollo de soluciones digitales que optimizan procesos operativos y administrativos. 
-                    Combino habilidades en programación y análisis de datos (<strong class="text-blue-400">Python</strong>, <strong class="text-blue-400">SQL</strong>, <strong class="text-yellow-400">Power BI</strong>) con experiencia en herramientas de productividad y <strong class="text-cyan-400">Automatización de Procesos</strong>.
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <span class="hero-badge">Desarrollador Junior & Transformación Digital</span>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Jonathan Merel</span>
+                </h1>
+                <p class="hero-description">
+                    Optimizo procesos empresariales y educativos con soluciones digitales inteligentes. 
+                    <span class="highlight">Python • SQL • Power BI • Automatización</span>
                 </p>
-                <p class="text-lg text-gray-300 leading-relaxed mb-6">
-                    Me apasiona implementar sistemas que reduzcan la carga repetitiva, mejoren la eficiencia de los equipos y faciliten decisiones basadas en datos. 
-                    Mi objetivo es integrarme rápidamente a proyectos de transformación digital, aportando valor desde mis conocimientos actuales y creciendo junto al equipo en cada etapa.
-                </p>
-                <p class="text-lg text-gray-300 leading-relaxed">
-                    Estoy construyendo una ruta de aprendizaje hacia la <strong class="text-purple-400">Inteligencia Artificial</strong> y el <strong class="text-purple-400">Machine Learning</strong>, con la visión de aplicar estas tecnologías en el sector empresarial y financiero de Panamá.
-                </p>
-
-                <div class="flex flex-wrap gap-4 mt-6">
-                    <a href="https://github.com/Jonathanmerel" target="_blank" 
-                       class="px-8 py-4 border border-gray-700 text-gray-300 hover:border-cyan-500 hover:text-cyan-400 font-medium transition rounded-lg">
-                        Ver GitHub →
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Ver proyectos <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Contactar
                     </a>
                 </div>
-            </div>
-
-            <!-- Lado derecho: foto + intereses -->
-            <div class="flex flex-col items-center lg:items-start">
-                <img src="191655148.png" alt="Foto profesional de Jonathan Merel" 
-                     class="w-64 h-64 rounded-full object-cover shadow-2xl mb-8">
-                <h3 class="text-xl font-medium mb-6 text-gray-300">Fuera del código</h3>
-                <div class="space-y-4">
-                    <div class="flex items-center gap-3"><i class="fas fa-mobile-alt text-cyan-500"></i><span>Gadgets tecnológicos</span></div>
-                    <div class="flex items-center gap-3"><i class="fas fa-gamepad text-cyan-500"></i><span>Juegos battle royale</span></div>
-                    <div class="flex items-center gap-3"><i class="fas fa-book text-cyan-500"></i><span>Ficción literaria</span></div>
+                <div class="hero-social">
+                    <a href="https://github.com/Jonathanmerel" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jonathan-merel-1747b426a/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
-
-        </div>
-    </div>
-</section>
-
-   <!-- Skills -->
-<section id="skills" class="py-32 border-t border-gray-900">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-light mb-16 text-center">Habilidades Técnicas</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
-
-            <!-- Python -->
-            <div class="group bg-gray-900/50 border border-gray-800 rounded-xl p-6 text-center 
-                        hover:border-cyan-500/50 hover:bg-gray-800/80 hover:scale-105 transition-all">
-                <i class="fab fa-python text-4xl text-cyan-500 mb-3"></i>
-                <p class="font-medium">Python</p>
+            <div class="scroll-down">
+                <a href="#about" class="scroll-link"><i class="fas fa-chevron-down"></i></a>
             </div>
+        </section>
 
-            <!-- SQL -->
-            <div class="group bg-gray-900/50 border border-gray-800 rounded-xl p-6 text-center 
-                        hover:border-blue-500/50 hover:bg-gray-800/80 hover:scale-105 transition-all">
-                <i class="fas fa-database text-4xl text-blue-500 mb-3"></i>
-                <p class="font-medium">SQL</p>
-            </div>
-
-            <!-- Power BI -->
-            <div class="group bg-gray-900/50 border border-gray-800 rounded-xl p-6 text-center 
-                        hover:border-yellow-500/50 hover:bg-gray-800/80 hover:scale-105 transition-all">
-                <i class="fas fa-chart-bar text-4xl text-yellow-500 mb-3"></i>
-                <p class="font-medium">Power BI</p>
-            </div>
-
-            <!-- Microsoft Office -->
-            <div class="group bg-gray-900/50 border border-gray-800 rounded-xl p-6 text-center 
-                        hover:border-blue-500/50 hover:bg-gray-800/80 hover:scale-105 transition-all">
-                <i class="fas fa-file-alt text-4xl text-blue-500 mb-3"></i>
-                <p class="font-medium">Microsoft Office</p>
-            </div>
-
-            <!-- Automatización de Procesos -->
-            <div class="group bg-gray-900/50 border border-gray-800 rounded-xl p-6 text-center 
-                        hover:border-cyan-500/50 hover:bg-gray-800/80 hover:scale-105 transition-all">
-                <i class="fas fa-robot text-4xl text-cyan-500 mb-3"></i>
-                <p class="font-medium">Automatización de Procesos</p>
-            </div>
-
-            <!-- Inteligencia Artificial -->
-            <div class="group bg-gray-900/50 border border-gray-800 rounded-xl p-6 text-center 
-                        hover:border-purple-500/50 hover:bg-gray-800/80 hover:scale-105 transition-all">
-                <i class="fas fa-brain text-4xl text-purple-500 mb-3"></i>
-                <p class="font-medium">Inteligencia Artificial <span class="text-xs text-gray-400">(En progreso)</span></p>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-    <!-- Projects -->
-    <section id="projects" class="py-32 border-t border-gray-900">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-light mb-16 text-center">Proyectos Destacados</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="border border-gray-800 rounded-xl overflow-hidden hover:border-cyan-500/50 transition">
-                    <div class="p-8">
-                        <span class="inline-block px-4 py-1 bg-cyan-500/20 text-cyan-400 text-xs font-medium rounded-full mb-4">Ciberseguridad</span>
-                        <h3 class="text-xl font-semibold mb-3">CyberTips - Portal Educativo</h3>
-                        <p class="text-gray-400 text-sm mb-6">Sitio web con guías prácticas de seguridad informática para usuarios y empresas.</p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded">HTML/CSS</span>
-                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded">JavaScript</span>
-                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded">GitHub Pages</span>
-                        </div>
-                        <a href="https://jonathanmerel.github.io/CyberTips.github.io/" target="_blank" class="text-cyan-400 font-medium flex items-center hover:underline">
-                            Ver proyecto → 
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2 class="section-title">Acerca de mí</h2>
+                        <p class="about-text">
+                            Soy estudiante de <strong class="text-cyan">Informática para la Gestión Educativa y Empresarial</strong>, enfocado en el desarrollo de soluciones digitales que optimizan procesos operativos y administrativos. 
+                            Combino habilidades en programación y análisis de datos (<strong class="text-blue">Python</strong>, <strong class="text-blue">SQL</strong>, <strong class="text-yellow">Power BI</strong>) con experiencia en herramientas de productividad y <strong class="text-cyan">Automatización de Procesos</strong>.
+                        </p>
+                        <p class="about-text">
+                            Me apasiona implementar sistemas que reduzcan la carga repetitiva, mejoren la eficiencia de los equipos y faciliten decisiones basadas en datos. 
+                            Mi objetivo es integrarme rápidamente a proyectos de transformación digital, aportando valor desde mis conocimientos actuales y creciendo junto al equipo en cada etapa.
+                        </p>
+                        <p class="about-text">
+                            Estoy construyendo una ruta de aprendizaje hacia la <strong class="text-purple">Inteligencia Artificial</strong> y el <strong class="text-purple">Machine Learning</strong>, con la visión de aplicar estas tecnologías en el sector empresarial y financiero de Panamá.
+                        </p>
+                        <a href="https://github.com/Jonathanmerel" target="_blank" class="btn btn-primary btn-small">
+                            Ver GitHub <i class="fab fa-github"></i>
                         </a>
                     </div>
-                </div>
-
-                <div class="border border-gray-800 rounded-xl overflow-hidden hover:border-cyan-500/50 transition">
-                    <div class="p-8">
-                        <span class="inline-block px-4 py-1 bg-green-500/20 text-green-400 text-xs font-medium rounded-full mb-4">Gestión Empresarial</span>
-                        <h3 class="text-xl font-semibold mb-3">Plataforma de Organización Digital</h3>
-                        <p class="text-gray-400 text-sm mb-6">Sistema full-stack para centralizar tareas, evidencias y reportes en una empresa de mantenimiento.</p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded">React.js</span>
-                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded">Firebase</span>
-                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded">Trello API</span>
+                    <div class="about-side">
+                        <div class="profile-image-wrapper">
+                            <img src="191655148.png" alt="Jonathan Merel" class="profile-image">
                         </div>
-                        <a href="#" class="text-cyan-400 font-medium flex items-center">En desarrollo →</a>
-                    </div>
-                </div>
-
-                <div class="border border-gray-800 rounded-xl overflow-hidden hover:border-cyan-500/50 transition">
-                    <div class="p-8">
-                        <span class="inline-block px-4 py-1 bg-purple-500/20 text-purple-400 text-xs font-medium rounded-full mb-4">Seguridad</span>
-                        <h3 class="text-xl font-semibold mb-3">Gestor Seguro de Contraseñas</h3>
-                        <p class="text-gray-400 text-sm mb-6">Aplicación local con encriptación AES para almacenamiento seguro de credenciales.</p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded">JavaScript</span>
-                            <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded">CryptoJS</span>
-                        </div>
-                        <a href="#" class="text-cyan-400 font-medium flex items-center">En desarrollo →</a>
+                        <h3 class="interests-title">Fuera del código</h3>
+                        <ul class="interests-list">
+                            <li><i class="fas fa-mobile-alt text-cyan"></i> Gadgets tecnológicos</li>
+                            <li><i class="fas fa-gamepad text-cyan"></i> Juegos battle royale</li>
+                            <li><i class="fas fa-book text-cyan"></i> Ficción literaria</li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title text-center">Habilidades Técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-python skill-icon" style="color: #22d3ee;"></i>
+                        <p class="skill-name">Python</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database skill-icon" style="color: #3b82f6;"></i>
+                        <p class="skill-name">SQL</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-chart-bar skill-icon" style="color: #eab308;"></i>
+                        <p class="skill-name">Power BI</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-file-alt skill-icon" style="color: #3b82f6;"></i>
+                        <p class="skill-name">Microsoft Office</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-robot skill-icon" style="color: #22d3ee;"></i>
+                        <p class="skill-name">Automatización de Procesos</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-brain skill-icon" style="color: #a78bfa;"></i>
+                        <p class="skill-name">Inteligencia Artificial <span class="skill-badge">En progreso</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title text-center">Proyectos Destacados</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-content">
+                            <span class="project-tag tag-cyan">Ciberseguridad</span>
+                            <h3 class="project-title">CyberTips - Portal Educativo</h3>
+                            <p class="project-description">Sitio web con guías prácticas de seguridad informática para usuarios y empresas.</p>
+                            <div class="project-tech">
+                                <span class="tech-item">HTML/CSS</span>
+                                <span class="tech-item">JavaScript</span>
+                                <span class="tech-item">GitHub Pages</span>
+                            </div>
+                            <a href="https://jonathanmerel.github.io/CyberTips.github.io/" target="_blank" class="project-link">
+                                Ver proyecto <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <span class="project-tag tag-green">Gestión Empresarial</span>
+                            <h3 class="project-title">Plataforma de Organización Digital</h3>
+                            <p class="project-description">Sistema full-stack para centralizar tareas, evidencias y reportes en una empresa de mantenimiento.</p>
+                            <div class="project-tech">
+                                <span class="tech-item">React.js</span>
+                                <span class="tech-item">Firebase</span>
+                                <span class="tech-item">Trello API</span>
+                            </div>
+                            <span class="project-link disabled">En desarrollo <i class="fas fa-code"></i></span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <span class="project-tag tag-purple">Seguridad</span>
+                            <h3 class="project-title">Gestor Seguro de Contraseñas</h3>
+                            <p class="project-description">Aplicación local con encriptación AES para almacenamiento seguro de credenciales.</p>
+                            <div class="project-tech">
+                                <span class="tech-item">JavaScript</span>
+                                <span class="tech-item">CryptoJS</span>
+                            </div>
+                            <span class="project-link disabled">En desarrollo <i class="fas fa-code"></i></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="section-title">¿Tienes un proyecto en mente?</h2>
+                    <p class="contact-text">Estoy abierto a colaborar en iniciativas de transformación digital, automatización o desarrollo de software. Hablemos.</p>
+                    <a href="mailto:jonathanmerel@email.com" class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i> Enviar mensaje
+                    </a>
+                    <p class="contact-email">O escríbeme a <span class="email-highlight">jonathanmerel@email.com</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 Jonathan Merel. Todos los derechos reservados.</p>
+            <p class="footer-credit">Diseño inspirado en la elegancia de Apple, Tesla y SpaceX.</p>
         </div>
-    </section>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
 
     <script>
         // Menú móvil
