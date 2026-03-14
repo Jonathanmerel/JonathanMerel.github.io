@@ -710,3 +710,8 @@ section {
         justify-content: center;
     }
 }
+.logo-img {
+  height: 40px;   /* Ajusta el tamaño según tu diseño */
+  width: auto;
+  vertical-align: middle; /* Centra la imagen con el texto si lo hubiera */
+}
