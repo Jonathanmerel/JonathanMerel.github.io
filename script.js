@@ -326,6 +326,7 @@ if (heroSection) counterObserver.observe(heroSection);
 
     updateCount();
 
+   
     // ── MODAL ──
     const modal = document.getElementById('cred-modal');
     if (!modal) return;
@@ -416,4 +417,3 @@ if (heroSection) counterObserver.observe(heroSection);
         }
     });
 })();
-</script>
