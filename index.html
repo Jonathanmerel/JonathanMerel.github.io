@@ -13,11 +13,8 @@
 </head>
 <body>
 
-    <!-- Cursor personalizado -->
     <div id="cursor"></div>
     <div id="cursor-ring"></div>
-
-    <!-- Fondo de partículas -->
     <canvas id="bg-canvas"></canvas>
 
     <!-- ── NAV ── -->
@@ -28,6 +25,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#credentials">Certs</a></li>
             </ul>
             <div class="nav-socials">
                 <a href="https://github.com/Jonathanmerel" target="_blank"><i class="fab fa-github"></i></a>
@@ -60,9 +58,7 @@
                     <a href="#projects" class="btn-primary">Ver proyectos <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-            <div class="hero-visual reveal">
-                </div>
-            </div>
+            <div class="hero-visual reveal"></div>
         </div>
     </section>
 
@@ -216,10 +212,91 @@
         </div>
     </section>
 
+    <!-- ── CREDENTIALS ── -->
+    <section id="credentials">
+        <div class="container">
+            <div class="sec-label">04 — Credentials</div>
+            <h2 class="sec-title">Títulos &amp; <em>Certificados</em></h2>
+
+            <div class="creds-filters reveal">
+                <button class="cred-filter-btn active" data-filter="all">Todos</button>
+                <button class="cred-filter-btn" data-filter="titulo">Títulos</button>
+                <button class="cred-filter-btn" data-filter="certificado">Certificados</button>
+                <button class="cred-filter-btn" data-filter="curso">Cursos</button>
+            </div>
+            <div class="creds-counter reveal">
+                Mostrando <span id="cred-count">0</span> credenciales
+            </div>
+
+            <div class="creds-grid">
+
+                <!-- TÍTULO ACADÉMICO -->
+                <div class="cred-card reveal" data-category="titulo">
+                    <span class="cred-badge verified">ACTIVO</span>
+                    <div class="cred-icon-wrap"><i class="fas fa-university"></i></div>
+                    <div class="cred-type">// Título Académico</div>
+                    <div class="cred-title">Licenciatura en Informática para la Gestión Educativa y Empresarial</div>
+                    <div class="cred-issuer">Universidad de Panamá — Sede Panamá Oeste</div>
+                    <div class="cred-meta">
+                        <span class="cred-date"><i class="fas fa-calendar-alt"></i> 2022 — En curso</span>
+                    </div>
+                    <div class="cred-skills">
+                        <span class="cred-skill-tag">Gestión TI</span>
+                        <span class="cred-skill-tag">Bases de Datos</span>
+                        <span class="cred-skill-tag">Redes</span>
+                        <span class="cred-skill-tag">Programación</span>
+                    </div>
+                </div>
+
+                <!--
+                ════════════════════════════════════════
+                PLANTILLA — Copia este bloque completo
+                para cada certificado o curso que tengas.
+
+                data-category opciones:
+                  "titulo"       → Título académico
+                  "certificado"  → Certificado profesional
+                  "curso"        → Curso completado
+
+                cred-badge class opciones:
+                  "verified"     → Verde  (VERIFICADO / COMPLETADO)
+                  "in-progress"  → Amarillo (EN CURSO)
+                  "pending"      → Azul  (PENDIENTE)
+
+                Íconos Font Awesome útiles:
+                  fab fa-google     fab fa-python    fab fa-aws
+                  fab fa-microsoft  fas fa-brain     fas fa-chart-bar
+                  fas fa-shield-alt fas fa-certificate
+                ════════════════════════════════════════
+
+                <div class="cred-card reveal" data-category="certificado">
+                    <span class="cred-badge verified">VERIFICADO</span>
+                    <div class="cred-icon-wrap"><i class="fas fa-certificate"></i></div>
+                    <div class="cred-type">// Certificado</div>
+                    <div class="cred-title">NOMBRE DEL CERTIFICADO</div>
+                    <div class="cred-issuer">EMISOR · PLATAFORMA</div>
+                    <div class="cred-meta">
+                        <span class="cred-date"><i class="fas fa-calendar-alt"></i> MES AÑO</span>
+                        <span class="cred-id">ID: ABC-12345</span>
+                    </div>
+                    <div class="cred-skills">
+                        <span class="cred-skill-tag">Skill 1</span>
+                        <span class="cred-skill-tag">Skill 2</span>
+                    </div>
+                    <a href="URL_VERIFICACION" class="cred-verify" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Verificar credencial
+                    </a>
+                </div>
+                -->
+
+            </div>
+        </div>
+    </section>
+
     <!-- ── TERMINAL / BIO ── -->
     <section id="terminal-sec">
         <div class="container">
-            <div class="sec-label">04 — Bio</div>
+            <div class="sec-label">05 — Bio</div>
             <h2 class="sec-title">En <em>código</em></h2>
             <div class="terminal-wrap reveal">
                 <div class="terminal-bar">
@@ -248,7 +325,6 @@
         </div>
     </section>
 
-
     <!-- ── FOOTER ── -->
     <footer>
         <div class="container footer-inner">
@@ -258,5 +334,37 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- Script filtros de credenciales -->
+    <script>
+        (function () {
+            const filterBtns = document.querySelectorAll('.cred-filter-btn');
+            const cards      = document.querySelectorAll('.cred-card');
+            const countEl    = document.getElementById('cred-count');
+
+            function updateCount() {
+                const visible = document.querySelectorAll('.cred-card:not(.hidden)').length;
+                if (countEl) countEl.textContent = visible;
+            }
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const filter = btn.dataset.filter;
+                    cards.forEach(card => {
+                        if (filter === 'all' || card.dataset.category === filter) {
+                            card.classList.remove('hidden');
+                        } else {
+                            card.classList.add('hidden');
+                        }
+                    });
+                    updateCount();
+                });
+            });
+
+            updateCount();
+        })();
+    </script>
 </body>
 </html>
