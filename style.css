@@ -1053,3 +1053,13 @@ footer {
     font-size: 0.6rem !important; /* Reducido de 0.65rem */
     margin-bottom: 0.3rem !important;
 }
+
+/* Reducir padding de la sección credentials */
+#credentials {
+    padding: 4rem 0 !important; /* Reducido de 7rem 0 */
+}
+
+/* Reducir gap del grid */
+.creds-grid {
+    gap: 1rem !important; /* Reducido de 1.5rem */
+}
