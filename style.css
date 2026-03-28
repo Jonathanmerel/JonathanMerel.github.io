@@ -974,3 +974,13 @@ footer {
     .skills-grid { grid-template-columns: 1fr; }
     .terminal-body { padding: 1.2rem; font-size: 0.72rem; }
 }
+/* Fix altura cards */
+.cred-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
+}
+
+.cred-verify {
+    margin-top: auto;
+}
