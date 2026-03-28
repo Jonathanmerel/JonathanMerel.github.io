@@ -230,38 +230,111 @@
 
             <div class="creds-grid">
 
-    <!-- ── MODAL CERTIFICADOS ── -->
-    <div id="cred-modal" class="cred-modal">
-        <div class="cred-modal-backdrop"></div>
-        <div class="cred-modal-content">
-            <button class="cred-modal-close" aria-label="Cerrar">&times;</button>
-            <div class="cred-modal-header">
-                <div class="cred-modal-icon"><i class="fas fa-certificate"></i></div>
-                <div class="cred-modal-info">
-                    <div class="cred-modal-type">// Certificado</div>
-                    <h3 class="cred-modal-title" id="modal-title">Título del Certificado</h3>
-                    <div class="cred-modal-issuer" id="modal-issuer">Emisor</div>
-                </div>
-            </div>
-            <div class="cred-modal-body">
-                <div class="cred-modal-image-wrap">
-                    <img id="modal-image" src="" alt="Certificado">
-                    <div class="cred-modal-loading">
-                        <div class="cred-spinner"></div>
-                        <span>Cargando credencial...</span>
+                <!-- TÍTULO ACADÉMICO -->
+                <div class="cred-card reveal" data-category="titulo">
+                    <span class="cred-badge verified">ACTIVO</span>
+                    <div class="cred-icon-wrap"><i class="fas fa-university"></i></div>
+                    <div class="cred-type">// Título Académico</div>
+                    <div class="cred-title">Licenciatura en Informática para la Gestión Educativa y Empresarial</div>
+                    <div class="cred-issuer">Universidad de Panamá — Sede Panamá Oeste</div>
+                    <div class="cred-meta">
+                        <span class="cred-date"><i class="fas fa-calendar-alt"></i> 2022 — En curso</span>
+                    </div>
+                    <div class="cred-skills">
+                        <span class="cred-skill-tag">Gestión TI</span>
+                        <span class="cred-skill-tag">Bases de Datos</span>
+                        <span class="cred-skill-tag">Redes</span>
+                        <span class="cred-skill-tag">Programación</span>
                     </div>
                 </div>
-                <div class="cred-modal-meta" id="modal-meta">
-                    <!-- Meta info dinámica -->
+                                <!-- CERTIFICADO: Cybrary - Ethical Hacking Cloud -->
+                <div class="cred-card reveal" data-category="certificado">
+                    <span class="cred-badge verified">VERIFICADO</span>
+                    <div class="cred-icon-wrap"><i class="fas fa-shield-alt"></i></div>
+                    <div class="cred-type">// Certificado Profesional</div>
+                    <div class="cred-title">Ethical Hacking: Cloud Computing</div>
+                    <div class="cred-issuer">Cybrary · Plataforma de Ciberseguridad</div>
+                    <div class="cred-meta">
+                        <span class="cred-date"><i class="fas fa-calendar-alt"></i> Marzo 2025</span>
+                        <span class="cred-id">ID: CC-c9edea0d-4860-4ad8-85f7-97dd39e2f50b</span>
+                    </div>
+                    <div class="cred-skills">
+                        <span class="cred-skill-tag">Cloud Security</span>
+                        <span class="cred-skill-tag">Ethical Hacking</span>
+                        <span class="cred-skill-tag">Pentesting</span>
+                    </div>
                 </div>
-            </div>
-            <div class="cred-modal-footer">
-                <a id="modal-verify" href="#" target="_blank" class="btn-primary" style="display:none;">
-                    <i class="fas fa-external-link-alt"></i> Verificar credencial
-                </a>
-            </div>
-        </div>
-    </div>
+
+                <!-- CERTIFICADO: Google/Coursera - Security Risks -->
+                <div class="cred-card reveal" data-category="certificado">
+                    <span class="cred-badge verified">VERIFICADO</span>
+                    <div class="cred-icon-wrap"><i class="fab fa-google"></i></div>
+                    <div class="cred-type">// Certificado Profesional</div>
+                    <div class="cred-title">Play It Safe: Manage Security Risks</div>
+                    <div class="cred-issuer">Google · Coursera</div>
+                    <div class="cred-meta">
+                        <span class="cred-date"><i class="fas fa-calendar-alt"></i> Noviembre 2025</span>
+                        <span class="cred-id">ID: 43ML9H27IFE4</span>
+                    </div>
+                    <div class="cred-skills">
+                        <span class="cred-skill-tag">Gestión de Riesgos</span>
+                        <span class="cred-skill-tag">Ciberseguridad</span>
+                        <span class="cred-skill-tag">Seguridad TI</span>
+                    </div>
+                    <a href="https://coursera.org/verify/43ML9H27IFE4" class="cred-verify" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Verificar credencial
+                    </a>
+                </div>
+
+                <!-- CURSO: Anthropic - Claude Code in Action -->
+                <div class="cred-card reveal" data-category="curso" data-cert-id="claude-code">
+                    <span class="cred-badge verified">COMPLETADO</span>
+                    <div class="cred-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="currentColor" style="width: 1.4rem; height: 1.4rem; color: var(--accent);">
+                            <path d="M17.304 3.541h-3.672l6.696 16.918h3.672zm-10.608 0L0 20.459h3.744l1.368-3.6h6.624l1.332 3.6h3.744L10.032 3.541zm-.264 10.656 1.944-5.148 1.908 5.148z"/>
+                        </svg>
+                    </div>
+                    <div class="cred-type">// Curso Especializado</div>
+                    <div class="cred-title">Claude Code in Action</div>
+                    <div class="cred-issuer">Anthropic · Plataforma de IA</div>
+                    <div class="cred-meta">
+                        <span class="cred-date"><i class="fas fa-calendar-alt"></i> Marzo 2026</span>
+                        <span class="cred-id">ID: 7innh6a58bqy</span>
+                    </div>
+                    <div class="cred-skills">
+                        <span class="cred-skill-tag">Claude AI</span>
+                        <span class="cred-skill-tag">Coding Assistant</span>
+                        <span class="cred-skill-tag">IA Generativa</span>
+                    </div>
+                    <a href="https://verify.skilljar.com/c/7innh6a58bqy" class="cred-verify" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Verificar credencial
+                    </a>
+                </div>
+
+                <!-- CURSO: Anthropic - Claude 101 -->
+                <div class="cred-card reveal" data-category="curso" data-cert-id="claude-101">
+                    <span class="cred-badge verified">COMPLETADO</span>
+                    <div class="cred-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="currentColor" style="width: 1.4rem; height: 1.4rem; color: var(--accent);">
+                            <path d="M17.304 3.541h-3.672l6.696 16.918h3.672zm-10.608 0L0 20.459h3.744l1.368-3.6h6.624l1.332 3.6h3.744L10.032 3.541zm-.264 10.656 1.944-5.148 1.908 5.148z"/>
+                        </svg>
+                    </div>
+                    <div class="cred-type">// Curso Especializado</div>
+                    <div class="cred-title">Claude 101</div>
+                    <div class="cred-issuer">Anthropic · Plataforma de IA</div>
+                    <div class="cred-meta">
+                        <span class="cred-date"><i class="fas fa-calendar-alt"></i> 2026</span>
+                        <span class="cred-id">ID: 9xmd5kc62g5h</span>
+                    </div>
+                    <div class="cred-skills">
+                        <span class="cred-skill-tag">Claude AI</span>
+                        <span class="cred-skill-tag">Prompt Engineering</span>
+                        <span class="cred-skill-tag">IA Conversacional</span>
+                    </div>
+                    <a href="https://verify.skilljar.com/c/9xmd5kc62g5h" class="cred-verify" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Verificar credencial
+                    </a>
+                </div>
 
     <!-- ── TERMINAL / BIO ── -->
     <section id="terminal-sec">
@@ -299,16 +372,15 @@
     <footer>
         <div class="container footer-inner">
             <div class="footer-logo"><strong>&lt;JM/&gt;</strong> — Jonathan Merel</div>
-            <div class="footer-right">© 2025 — Diseñado &amp; Desarrollado con café</div>
+            <div class="footer-right">© 2025 — Diseñado &amp;</div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 
-    <!-- Script de credenciales: filtros + modal -->
+    <!-- Script filtros de credenciales -->
     <script>
         (function () {
-            // ── FILTROS ──
             const filterBtns = document.querySelectorAll('.cred-filter-btn');
             const cards      = document.querySelectorAll('.cred-card');
             const countEl    = document.getElementById('cred-count');
@@ -335,100 +407,6 @@
             });
 
             updateCount();
-
-            // ── MODAL ──
-            const modal = document.getElementById('cred-modal');
-            if (!modal) return;
-            
-            const modalBackdrop = modal.querySelector('.cred-modal-backdrop');
-            const modalClose = modal.querySelector('.cred-modal-close');
-            const modalImage = document.getElementById('modal-image');
-            const modalTitle = document.getElementById('modal-title');
-            const modalIssuer = document.getElementById('modal-issuer');
-            const modalMeta = document.getElementById('modal-meta');
-            const modalVerify = document.getElementById('modal-verify');
-            const modalType = modal.querySelector('.cred-modal-type');
-
-            // Mapeo de certificados a imágenes
-            const certImages = {
-                'licenciatura': '191655148.png',
-                'ethical-hacking': '1741114791671.jpg',
-                'security-risks': '1763850279080.jpg',
-                'claude-code': 'certificate-7innh6a58bqy-1773944236.pdf',
-                'claude-101': 'certificate-9xmd5kc62g5h-1774643258.pdf'
-            };
-
-            function openModal(card) {
-                const certId = card.dataset.certId;
-                const title = card.querySelector('.cred-title').textContent;
-                const issuer = card.querySelector('.cred-issuer').textContent;
-                const typeText = card.querySelector('.cred-type').textContent;
-                const dateEl = card.querySelector('.cred-date');
-                const idEl = card.querySelector('.cred-id');
-                const verifyLink = card.querySelector('.cred-verify');
-
-                modalTitle.textContent = title;
-                modalIssuer.textContent = issuer;
-                modalType.textContent = typeText;
-
-                let metaHTML = '';
-                if (dateEl) {
-                    const dateText = dateEl.textContent.replace(/.*calendar-alt., /, '');
-                    metaHTML += `<div class="cred-modal-meta-item"><i class="fas fa-calendar-alt"></i><strong>Fecha:</strong> ${dateText}</div>`;
-                }
-                if (idEl) {
-                    const idText = idEl.textContent.replace('ID: ', '');
-                    metaHTML += `<div class="cred-modal-meta-item"><i class="fas fa-fingerprint"></i><strong>ID:</strong> ${idText}</div>`;
-                }
-                modalMeta.innerHTML = metaHTML;
-
-                if (verifyLink) {
-                    modalVerify.href = verifyLink.href;
-                    modalVerify.style.display = 'inline-flex';
-                } else {
-                    modalVerify.style.display = 'none';
-                }
-
-                modalImage.classList.remove('loaded');
-                const imageSrc = certImages[certId];
-                if (imageSrc) {
-                    modalImage.src = imageSrc;
-                    modalImage.onload = () => modalImage.classList.add('loaded');
-                    modalImage.onerror = () => {
-                        modalImage.style.display = 'none';
-                    };
-                } else {
-                    modalImage.style.display = 'none';
-                }
-
-                modal.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            }
-
-            function closeModal() {
-                modal.classList.remove('active');
-                document.body.style.overflow = '';
-                modalImage.classList.remove('loaded');
-                modalImage.style.display = '';
-                modalImage.src = '';
-            }
-
-            cards.forEach(card => {
-                card.style.cursor = 'pointer';
-                card.addEventListener('click', (e) => {
-                    if (e.target.closest('.cred-verify')) return;
-                    openModal(card);
-                });
-            });
-
-            modalClose.addEventListener('click', closeModal);
-            modalBackdrop.addEventListener('click', closeModal);
-            
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && modal.classList.contains('active')) {
-                    closeModal();
-                }
-            });
         })();
     </script>
 </body>
