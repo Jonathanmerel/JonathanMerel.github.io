@@ -323,5 +323,3 @@ if (heroSection) counterObserver.observe(heroSection);
             updateCount();
         });
     });
-
-    updateCount();
