@@ -296,7 +296,6 @@ const counterObserver = new IntersectionObserver(entries => {
 const heroSection = document.getElementById('hero');
 if (heroSection) counterObserver.observe(heroSection);
 
-<script>
 (function () {
     // ── FILTROS ──
     const filterBtns = document.querySelectorAll('.cred-filter-btn');
