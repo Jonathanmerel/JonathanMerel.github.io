@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a14"/>
+      <stop offset="100%" style="stop-color:#0d1020"/>
+    </linearGradient>
+    <linearGradient id="barLow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff88"/>
+      <stop offset="100%" style="stop-color:#00cc66"/>
+    </linearGradient>
+    <linearGradient id="barMed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffc800"/>
+      <stop offset="100%" style="stop-color:#ff9900"/>
+    </linearGradient>
+    <linearGradient id="barHigh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff4444"/>
+      <stop offset="100%" style="stop-color:#cc2222"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(0,255,136,0.06)"/>
+      <stop offset="100%" style="stop-color:rgba(0,194,255,0.03)"/>
+    </linearGradient>
+    <filter id="glow-green">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-blue">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0,255,136,0.04)" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect width="800" height="450" fill="url(#grid)"/>
+
+  <!-- Glow orbs -->
+  <ellipse cx="150" cy="120" rx="180" ry="120" fill="rgba(0,255,136,0.04)"/>
+  <ellipse cx="680" cy="340" rx="160" ry="110" fill="rgba(0,194,255,0.05)"/>
+
+  <!-- Left accent line -->
+  <rect x="0" y="0" width="3" height="450" fill="url(#barLow)" opacity="0.6"/>
+
+  <!-- ── MAIN CARD ── -->
+  <rect x="40" y="30" width="340" height="390" rx="12" fill="url(#cardGrad)" stroke="rgba(0,255,136,0.15)" stroke-width="1"/>
+
+  <!-- Card header label -->
+  <text x="64" y="72" font-family="'Courier New', monospace" font-size="10" fill="#00c2ff" letter-spacing="2" opacity="0.8">// CREDIT RISK MODEL</text>
+
+  <!-- Risk bars chart -->
+  <!-- LOW -->
+  <text x="64" y="108" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.5)" letter-spacing="1">LOW</text>
+  <rect x="110" y="95" width="200" height="14" rx="3" fill="rgba(255,255,255,0.05)"/>
+  <rect x="110" y="95" width="168" height="14" rx="3" fill="url(#barLow)" filter="url(#glow-green)"/>
+  <text x="318" y="107" font-family="'Courier New', monospace" font-size="10" fill="#00ff88">84%</text>
+
+  <!-- MEDIUM -->
+  <text x="64" y="135" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.5)" letter-spacing="1">MED</text>
+  <rect x="110" y="122" width="200" height="14" rx="3" fill="rgba(255,255,255,0.05)"/>
+  <rect x="110" y="122" width="110" height="14" rx="3" fill="url(#barMed)"/>
+  <text x="318" y="134" font-family="'Courier New', monospace" font-size="10" fill="#ffc800">55%</text>
+
+  <!-- HIGH -->
+  <text x="64" y="162" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.5)" letter-spacing="1">HIGH</text>
+  <rect x="110" y="149" width="200" height="14" rx="3" fill="rgba(255,255,255,0.05)"/>
+  <rect x="110" y="149" width="52" height="14" rx="3" fill="url(#barHigh)"/>
+  <text x="318" y="161" font-family="'Courier New', monospace" font-size="10" fill="#ff4444">26%</text>
+
+  <!-- Divider -->
+  <line x1="64" y1="185" x2="356" y2="185" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Score display -->
+  <text x="64" y="215" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.4)" letter-spacing="1">RISK_SCORE</text>
+  <text x="64" y="248" font-family="'Courier New', monospace" font-size="38" font-weight="bold" fill="#00ff88" filter="url(#glow-green)">0.847</text>
+  <text x="230" y="248" font-family="'Courier New', monospace" font-size="11" fill="rgba(255,255,255,0.3)">confidence</text>
+  <text x="230" y="265" font-family="'Courier New', monospace" font-size="14" fill="#00c2ff">92.3%</text>
+
+  <!-- Label badge -->
+  <rect x="64" y="268" width="72" height="24" rx="4" fill="rgba(255,68,68,0.12)" stroke="rgba(255,68,68,0.35)" stroke-width="1"/>
+  <text x="100" y="284" font-family="'Courier New', monospace" font-size="11" fill="#ff4444" text-anchor="middle" font-weight="bold">● HIGH</text>
+
+  <!-- Divider -->
+  <line x1="64" y1="308" x2="356" y2="308" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Feature importance mini bars -->
+  <text x="64" y="330" font-family="'Courier New', monospace" font-size="9" fill="rgba(255,255,255,0.35)" letter-spacing="1.5">FEATURE IMPORTANCE</text>
+
+  <!-- feat 1 -->
+  <text x="64" y="350" font-family="'Courier New', monospace" font-size="8.5" fill="rgba(255,255,255,0.45)">debt_to_income</text>
+  <rect x="185" y="340" width="130" height="8" rx="2" fill="rgba(255,255,255,0.05)"/>
+  <rect x="185" y="340" width="116" height="8" rx="2" fill="rgba(0,255,136,0.5)"/>
+
+  <!-- feat 2 -->
+  <text x="64" y="368" font-family="'Courier New', monospace" font-size="8.5" fill="rgba(255,255,255,0.45)">credit_score</text>
+  <rect x="185" y="358" width="130" height="8" rx="2" fill="rgba(255,255,255,0.05)"/>
+  <rect x="185" y="358" width="96" height="8" rx="2" fill="rgba(0,194,255,0.5)"/>
+
+  <!-- feat 3 -->
+  <text x="64" y="386" font-family="'Courier New', monospace" font-size="8.5" fill="rgba(255,255,255,0.45)">missed_payments</text>
+  <rect x="185" y="376" width="130" height="8" rx="2" fill="rgba(255,255,255,0.05)"/>
+  <rect x="185" y="376" width="74" height="8" rx="2" fill="rgba(255,200,0,0.5)"/>
+
+  <!-- ── RIGHT PANEL: Terminal ── -->
+  <rect x="420" y="30" width="340" height="390" rx="12" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+
+  <!-- Terminal bar -->
+  <rect x="420" y="30" width="340" height="36" rx="12" fill="rgba(255,255,255,0.04)"/>
+  <rect x="420" y="48" width="340" height="18" fill="rgba(255,255,255,0.04)"/>
+  <circle cx="444" cy="48" r="6" fill="#ff5f57"/>
+  <circle cx="464" cy="48" r="6" fill="#febc2e"/>
+  <circle cx="484" cy="48" r="6" fill="#28c840"/>
+  <text x="510" y="53" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.4)">POST /api/v1/predictions/</text>
+
+  <!-- Terminal content -->
+  <text x="440" y="95" font-family="'Courier New', monospace" font-size="10" fill="#00ff88">$</text>
+  <text x="454" y="95" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.7)">curl -X POST /predictions/</text>
+
+  <text x="440" y="118" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.3)">{</text>
+  <text x="454" y="136" font-family="'Courier New', monospace" font-size="10" fill="#00c2ff">"credit_score"</text>
+  <text x="562" y="136" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.5)">: 380,</text>
+  <text x="454" y="153" font-family="'Courier New', monospace" font-size="10" fill="#00c2ff">"annual_income"</text>
+  <text x="568" y="153" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.5)">: 18000,</text>
+  <text x="454" y="170" font-family="'Courier New', monospace" font-size="10" fill="#00c2ff">"total_debt"</text>
+  <text x="540" y="170" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.5)">: 60000,</text>
+  <text x="454" y="187" font-family="'Courier New', monospace" font-size="10" fill="#00c2ff">"missed_payments"</text>
+  <text x="580" y="187" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.5)">: 6</text>
+  <text x="440" y="204" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.3)">}</text>
+
+  <!-- Response divider -->
+  <line x1="440" y1="220" x2="740" y2="220" stroke="rgba(0,255,136,0.15)" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="440" y="216" font-family="'Courier New', monospace" font-size="9" fill="rgba(0,255,136,0.5)">RESPONSE 200 OK — 18.4ms</text>
+
+  <text x="440" y="242" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.3)">{</text>
+  <text x="454" y="260" font-family="'Courier New', monospace" font-size="10" fill="#00c2ff">"risk_label"</text>
+  <text x="542" y="260" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.5)">:</text>
+  <rect x="556" y="248" width="48" height="16" rx="3" fill="rgba(255,68,68,0.15)" stroke="rgba(255,68,68,0.4)" stroke-width="1"/>
+  <text x="580" y="260" font-family="'Courier New', monospace" font-size="10" fill="#ff4444" text-anchor="middle">"HIGH"</text>
+
+  <text x="454" y="278" font-family="'Courier New', monospace" font-size="10" fill="#00c2ff">"risk_score"</text>
+  <text x="542" y="278" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.5)">:</text>
+  <text x="556" y="278" font-family="'Courier New', monospace" font-size="10" fill="#ff4444">0.8471,</text>
+
+  <text x="454" y="296" font-family="'Courier New', monospace" font-size="10" fill="#00c2ff">"confidence"</text>
+  <text x="546" y="296" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.5)">:</text>
+  <text x="560" y="296" font-family="'Courier New', monospace" font-size="10" fill="#00ff88">0.9230,</text>
+
+  <text x="454" y="314" font-family="'Courier New', monospace" font-size="10" fill="#00c2ff">"model_version"</text>
+  <text x="568" y="314" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.5)">: "1.0.0",</text>
+
+  <text x="440" y="332" font-family="'Courier New', monospace" font-size="10" fill="rgba(255,255,255,0.3)">}</text>
+
+  <!-- Recommendation box -->
+  <rect x="440" y="348" width="300" height="50" rx="6" fill="rgba(255,68,68,0.07)" stroke="rgba(255,68,68,0.2)" stroke-width="1"/>
+  <text x="456" y="366" font-family="'Courier New', monospace" font-size="9" fill="#ff4444">🚫 Alto riesgo (0.85). No aprobar</text>
+  <text x="456" y="382" font-family="'Courier New', monospace" font-size="9" fill="rgba(255,255,255,0.4)">sin colateral o co-deudor.</text>
+
+  <!-- Bottom badges -->
+  <rect x="440" y="408" width="60" height="18" rx="4" fill="rgba(0,255,136,0.08)" stroke="rgba(0,255,136,0.2)" stroke-width="1"/>
+  <text x="470" y="421" font-family="'Courier New', monospace" font-size="8" fill="#00ff88" text-anchor="middle">FastAPI</text>
+
+  <rect x="508" y="408" width="64" height="18" rx="4" fill="rgba(0,194,255,0.08)" stroke="rgba(0,194,255,0.2)" stroke-width="1"/>
+  <text x="540" y="421" font-family="'Courier New', monospace" font-size="8" fill="#00c2ff" text-anchor="middle">Sklearn</text>
+
+  <rect x="580" y="408" width="72" height="18" rx="4" fill="rgba(0,255,136,0.08)" stroke="rgba(0,255,136,0.2)" stroke-width="1"/>
+  <text x="616" y="421" font-family="'Courier New', monospace" font-size="8" fill="#00ff88" text-anchor="middle">PostgreSQL</text>
+
+  <rect x="660" y="408" width="60" height="18" rx="4" fill="rgba(255,200,0,0.08)" stroke="rgba(255,200,0,0.2)" stroke-width="1"/>
+  <text x="690" y="421" font-family="'Courier New', monospace" font-size="8" fill="#ffc800" text-anchor="middle">Docker</text>
+</svg>
