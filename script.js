@@ -1,5 +1,5 @@
 /* =============================================
-   JONATHAN MEREL — Portfolio JS
+   JONATHAN MEREL — Portfolio JS · Data Analyst
    ============================================= */
 
 // ── CUSTOM CURSOR ──────────────────────────────
@@ -8,8 +8,7 @@ const ring   = document.getElementById('cursor-ring');
 let mx = 0, my = 0, rx = 0, ry = 0;
 
 document.addEventListener('mousemove', e => {
-    mx = e.clientX;
-    my = e.clientY;
+    mx = e.clientX; my = e.clientY;
     cursor.style.left = mx + 'px';
     cursor.style.top  = my + 'px';
 });
@@ -23,7 +22,7 @@ function animRing() {
 }
 animRing();
 
-document.querySelectorAll('a, button, .skill-block, .project-card').forEach(el => {
+document.querySelectorAll('a, button, .skill-block, .project-card, .cred-card').forEach(el => {
     el.addEventListener('mouseenter', () => {
         cursor.style.width  = '6px';
         cursor.style.height = '6px';
@@ -61,10 +60,8 @@ const particles = Array.from({ length: 80 }, () => ({
 function drawParticles() {
     bgCtx.clearRect(0, 0, bgCanvas.width, bgCanvas.height);
 
-    // Move & wrap particles
     particles.forEach(p => {
-        p.x += p.vx;
-        p.y += p.vy;
+        p.x += p.vx; p.y += p.vy;
         if (p.x < 0) p.x = bgCanvas.width;
         if (p.x > bgCanvas.width)  p.x = 0;
         if (p.y < 0) p.y = bgCanvas.height;
@@ -76,7 +73,6 @@ function drawParticles() {
         bgCtx.fill();
     });
 
-    // Draw connection lines
     particles.forEach((a, i) => {
         particles.slice(i + 1).forEach(b => {
             const dist = Math.hypot(a.x - b.x, a.y - b.y);
@@ -96,131 +92,31 @@ function drawParticles() {
 drawParticles();
 
 
-// ── HERO 3D NEURAL NETWORK ─────────────────────
-const heroCanvas = document.getElementById('hero-canvas');
-
-if (heroCanvas) {
-    const hCtx = heroCanvas.getContext('2d');
-    heroCanvas.width  = heroCanvas.offsetWidth;
-    heroCanvas.height = heroCanvas.offsetHeight;
-
-    let rotation = 0;
-
-    const nodes = Array.from({ length: 30 }, () => ({
-        x:  (Math.random() - 0.5) * 300,
-        y:  (Math.random() - 0.5) * 300,
-        z:  (Math.random() - 0.5) * 300,
-        vx: (Math.random() - 0.5) * 0.5,
-        vy: (Math.random() - 0.5) * 0.5,
-        vz: (Math.random() - 0.5) * 0.5
-    }));
-
-    function drawHero3D() {
-        hCtx.clearRect(0, 0, heroCanvas.width, heroCanvas.height);
-
-        const cx = heroCanvas.width  / 2;
-        const cy = heroCanvas.height / 2;
-        rotation += 0.005;
-
-        const cosA = Math.cos(rotation);
-        const sinA = Math.sin(rotation);
-        const cosB = Math.cos(rotation * 0.7);
-        const sinB = Math.sin(rotation * 0.7);
-
-        // Update node positions
-        nodes.forEach(n => {
-            n.x += n.vx;
-            n.y += n.vy;
-            n.z += n.vz;
-            if (Math.abs(n.x) > 200) n.vx *= -1;
-            if (Math.abs(n.y) > 200) n.vy *= -1;
-            if (Math.abs(n.z) > 200) n.vz *= -1;
-
-            // Rotate Y
-            const rx  = n.x * cosA - n.z * sinA;
-            const rz  = n.x * sinA + n.z * cosA;
-            // Rotate X
-            const ry2 = n.y * cosB - rz * sinB;
-            const rz2 = n.y * sinB + rz * cosB;
-
-            // Project to 2D
-            const fov = 400;
-            const scale = fov / (fov + rz2);
-            n._sx = cx + rx * scale;
-            n._sy = cy + ry2 * scale;
-            n._s  = scale;
-            n._d  = (rz2 + 200) / 400;
-        });
-
-        // Draw edges
-        nodes.forEach((a, i) => {
-            nodes.slice(i + 1).forEach(b => {
-                const dist = Math.hypot(a.x - b.x, a.y - b.y, a.z - b.z);
-                if (dist < 120) {
-                    const opacity = 0.15 * (1 - dist / 120) * ((a._s + b._s) / 2);
-                    hCtx.beginPath();
-                    hCtx.moveTo(a._sx, a._sy);
-                    hCtx.lineTo(b._sx, b._sy);
-                    hCtx.strokeStyle = `rgba(0,200,255,${opacity})`;
-                    hCtx.lineWidth   = 0.8;
-                    hCtx.stroke();
-                }
-            });
-        });
-
-        // Draw nodes
-        nodes.forEach(n => {
-            const alpha = 0.4 + n._d * 0.6;
-            const r     = 2 + n._d * 3;
-
-            hCtx.beginPath();
-            hCtx.arc(n._sx, n._sy, r, 0, Math.PI * 2);
-
-            const grad = hCtx.createRadialGradient(n._sx, n._sy, 0, n._sx, n._sy, r * 2);
-            grad.addColorStop(0, `rgba(0,200,255,${alpha})`);
-            grad.addColorStop(1, 'rgba(0,200,255,0)');
-            hCtx.fillStyle = grad;
-            hCtx.fill();
-        });
-
-        requestAnimationFrame(drawHero3D);
-    }
-    drawHero3D();
-
-    window.addEventListener('resize', () => {
-        heroCanvas.width  = heroCanvas.offsetWidth;
-        heroCanvas.height = heroCanvas.offsetHeight;
-    });
-}
-
-
-// ── TYPEWRITER EFFECT ──────────────────────────
+// ── TYPEWRITER — Data Analyst phrases ──────────
 const phrases = [
-    'Automatización de Procesos',
-    'Machine Learning Engineer',
-    'Analista de Datos',
-    'Desarrollador Python',
-    'Especialista en IA'
+    'Data Analyst',
+    'Power BI Developer',
+    'Excel & SQL Specialist',
+    'Business Intelligence',
+    'Analista de Datos'
 ];
-let phraseIndex  = 0;
-let charIndex    = 0;
-let isDeleting   = false;
+let phraseIndex = 0, charIndex = 0, isDeleting = false;
 
 function typeEffect() {
     const el = document.getElementById('typed-text');
     if (!el) return;
 
-    const currentPhrase = phrases[phraseIndex];
+    const current = phrases[phraseIndex];
 
     if (!isDeleting) {
-        el.textContent = currentPhrase.slice(0, ++charIndex);
-        if (charIndex === currentPhrase.length) {
+        el.textContent = current.slice(0, ++charIndex);
+        if (charIndex === current.length) {
             isDeleting = true;
             setTimeout(typeEffect, 1800);
             return;
         }
     } else {
-        el.textContent = currentPhrase.slice(0, --charIndex);
+        el.textContent = current.slice(0, --charIndex);
         if (charIndex === 0) {
             isDeleting = false;
             phraseIndex = (phraseIndex + 1) % phrases.length;
@@ -236,6 +132,22 @@ typeEffect();
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 50);
+
+    // Active nav link según sección visible
+    const sections = document.querySelectorAll('section[id]');
+    const scrollY  = window.scrollY + 100;
+    sections.forEach(sec => {
+        const top    = sec.offsetTop;
+        const height = sec.offsetHeight;
+        const id     = sec.getAttribute('id');
+        const link   = document.querySelector(`.nav-links a[href="#${id}"]`);
+        if (link) {
+            if (scrollY >= top && scrollY < top + height) {
+                document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+                link.classList.add('active');
+            }
+        }
+    });
 });
 
 
@@ -257,13 +169,41 @@ navLinks.querySelectorAll('a').forEach(a => {
 
 
 // ── SCROLL REVEAL ──────────────────────────────
-const revealElements = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('visible');
     });
 }, { threshold: 0.1 });
 
-revealElements.forEach(el => revealObserver.observe(el));
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+
+// ── FILTROS CREDENCIALES ────────────────────────
+(function () {
+    const filterBtns = document.querySelectorAll('.cred-filter-btn');
+    const cards      = document.querySelectorAll('.cred-card');
+    const countEl    = document.getElementById('cred-count');
+
+    function updateCount() {
+        const visible = document.querySelectorAll('.cred-card:not(.hidden)').length;
+        if (countEl) countEl.textContent = visible;
+    }
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.dataset.filter;
+            cards.forEach(card => {
+                if (filter === 'all' || card.dataset.category === filter) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+            updateCount();
+        });
+    });
+
+    updateCount();
+})();
