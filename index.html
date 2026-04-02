@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
     <div id="cursor"></div>
     <div id="cursor-ring"></div>
     <canvas id="bg-canvas"></canvas>
-
+ 
     <!-- ── NAV ── -->
     <nav id="navbar">
         <div class="container nav-inner">
@@ -38,78 +38,74 @@
             </button>
         </div>
     </nav>
-
+ 
     <!-- ── HERO ── -->
-   <section class="hero">
-
-    <div class="hero-container">
-
-        <!-- Texto principal -->
-        <div class="hero-content">
-            <h1>AI Developer / Builder</h1>
-            <p>Construyo soluciones con IA, automatización y LLMs</p>
-
-            <div class="hero-buttons">
-                <a href="#" class="btn-primary">Ver proyectos</a>
-                <a href="#" class="btn-secondary">Certificados</a>
-            </div>
-        </div>
-
-        <!-- Mini Dashboard -->
-        <div class="hero-visual">
-            
-            <div class="hero-dashboard mini">
-
-                <div class="dash-bar">
-                    <div class="d-dot d-r"></div>
-                    <div class="d-dot d-y"></div>
-                    <div class="d-dot d-g"></div>
-                    <span class="dash-label">ai_stack.json</span>
+    <section id="hero">
+        <div class="container hero-inner">
+            <div class="hero-content reveal">
+                <div class="hero-label">Panamá, PA — Disponible para oportunidades</div>
+                <h1 class="hero-name">
+                    Jonathan
+                    <span class="line2">Merel</span>
+                </h1>
+                <div class="hero-role">
+                    <span id="typed-text"></span><span class="typed-cursor"></span>
                 </div>
-
-                <div class="dash-body">
-
-                    <div class="dash-kpis">
-                        <div class="kpi-box">
-                            <span class="kpi-val">+3</span>
-                            <span class="kpi-lbl">AI Models</span>
-                        </div>
-
-                        <div class="kpi-box">
-                            <span class="kpi-val">94%</span>
-                            <span class="kpi-lbl">Prompt Acc.</span>
-                        </div>
-
-                        <div class="kpi-box">
-                            <span class="kpi-val">10+</span>
-                            <span class="kpi-lbl">Automations</span>
-                        </div>
-                    </div>
-
-                    <div class="dash-chart">
-                        <div class="chart-bars">
-                            <div class="c-bar" style="height:80%"></div>
-                            <div class="c-bar" style="height:75%"></div>
-                            <div class="c-bar" style="height:65%"></div>
-                            <div class="c-bar" style="height:85%"></div>
-                            <div class="c-bar active" style="height:95%"></div>
-                        </div>
-                    </div>
-
-                    <div class="dash-footer">
-                        <span class="df-tag">LLMs</span>
-                        <span class="df-tag">Automation</span>
-                        <span class="df-tag">APIs</span>
-                    </div>
-
+                <p class="hero-desc">
+                    Estudiante de último año con enfoque en <strong>análisis de datos</strong> y
+                    <strong>Business Intelligence</strong>. Convierto hojas de cálculo caóticas y
+                    bases de datos en dashboards que ayudan a tomar mejores decisiones.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">Ver proyectos <i class="fas fa-arrow-right"></i></a>
+                    <a href="#credentials" class="btn-secondary">Certificados <i class="fas fa-certificate"></i></a>
                 </div>
             </div>
-
+            <div class="hero-visual reveal">
+                <!-- Mini dashboard decorativo -->
+                <div class="hero-dashboard">
+                    <div class="dash-bar">
+                        <div class="d-dot d-r"></div><div class="d-dot d-y"></div><div class="d-dot d-g"></div>
+                        <span class="dash-label">dashboard_ventas.pbix</span>
+                    </div>
+                    <div class="dash-body">
+                        <div class="dash-kpis">
+                            <div class="kpi-box">
+                                <span class="kpi-val">$2.4M</span>
+                                <span class="kpi-lbl">Ventas YTD</span>
+                                <span class="kpi-delta up">▲ 12%</span>
+                            </div>
+                            <div class="kpi-box">
+                                <span class="kpi-val">94%</span>
+                                <span class="kpi-lbl">Satisfacción</span>
+                                <span class="kpi-delta up">▲ 3%</span>
+                            </div>
+                            <div class="kpi-box">
+                                <span class="kpi-val">1,248</span>
+                                <span class="kpi-lbl">Clientes</span>
+                                <span class="kpi-delta down">▼ 2%</span>
+                            </div>
+                        </div>
+                        <div class="dash-chart">
+                            <div class="chart-bars">
+                                <div class="c-bar" style="height:55%"><span>Ene</span></div>
+                                <div class="c-bar" style="height:70%"><span>Feb</span></div>
+                                <div class="c-bar" style="height:45%"><span>Mar</span></div>
+                                <div class="c-bar" style="height:85%"><span>Abr</span></div>
+                                <div class="c-bar" style="height:65%"><span>May</span></div>
+                                <div class="c-bar active" style="height:95%"><span>Jun</span></div>
+                            </div>
+                        </div>
+                        <div class="dash-footer">
+                            <span class="df-tag">Power BI</span>
+                            <span class="df-tag">DAX</span>
+                            <span class="df-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-    </div>
-
-</section>
+    </section>
 
     <!-- ── ABOUT ── -->
     <section id="about">
