@@ -205,7 +205,7 @@ section { padding: 7rem 0; }
 .kpi-val { font-family: var(--font-mono); font-size: 1.1rem; font-weight: 700; color: var(--text); }
 .kpi-lbl { font-size: 0.68rem; color: var(--text-dim); }
 .kpi-delta { font-family: var(--font-mono); font-size: 0.65rem; }
-.kpi-delta.up   { color: var(--accent); }
+.kpi-delta.up   { color: #00ffae; }
 .kpi-delta.down { color: #ff4444; }
 
 .dash-chart { margin-bottom: 1rem; }
@@ -223,7 +223,7 @@ section { padding: 7rem 0; }
     padding-bottom: 4px;
 }
 .c-bar span { font-family: var(--font-mono); font-size: 0.55rem; color: var(--text-dim); }
-.c-bar.active { background: rgba(0,255,136,0.5); }
+.c-bar.active {  box-shadow: 0 0 10px #00ffae; }
 .c-bar.active span { color: var(--accent); }
 
 .dash-footer { display: flex; gap: 0.4rem; flex-wrap: wrap; }
