@@ -1,486 +1,399 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan Merel | Data Analyst</title>
-    <meta name="description" content="Data Analyst especializado en Power BI, Excel avanzado y SQL. Transformando datos en decisiones de negocio.">
-    <link rel="icon" type="image/png" href="Jm.IO-removebg-preview.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Jonathan Merel — IT Support Analyst especializado en automatización, CRM y agentes de IA conversacional. Panamá."/>
+  <title>Jonathan Merel | IT Automation & AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
- 
-    <div id="cursor"></div>
-    <div id="cursor-ring"></div>
-    <canvas id="bg-canvas"></canvas>
- 
-    <!-- ── NAV ── -->
-    <nav id="navbar">
-        <div class="container nav-inner">
-            <a href="#hero" class="nav-logo"><span>&lt;</span>JM<span>/&gt;</span></a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#credentials">Certs</a></li>
-                <li><a href="#terminal-sec">Bio</a></li>
-            </ul>
-            <div class="nav-socials">
-                <a href="https://github.com/Jonathanmerel" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/jonathan-merel-1747b426a/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://medium.com/@jonathanmerel" target="_blank"><i class="fab fa-medium"></i></a>
-            </div>
-            <button class="hamburger" id="hamburger" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
+
+<!-- ── NAV ──────────────────────────────────────────────── -->
+<nav>
+  <a href="#hero" class="nav-logo">&lt;<span>JM</span>/&gt;</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#credentials">Certs</a></li>
+    <li><a href="#terminal">Bio</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ─────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-pre">Disponible para oportunidades — Panamá, PA</div>
+  <h1 class="hero-name">Jonathan<br/><span class="accent">Merel</span></h1>
+  <p class="hero-role">
+    <strong>IT Support Analyst</strong> @ Grupo Terrabona ·
+    Automatización · CRM · Agentes de IA
+  </p>
+  <p class="hero-tagline">
+    Conecto sistemas, entreno asistentes y automatizo flujos —<br/>
+    para que el negocio no dependa de que alguien esté mirando la pantalla.
+  </p>
+  <div class="hero-btns">
+    <a href="#projects" class="btn-primary">→ Ver proyectos</a>
+    <a href="#credentials" class="btn-secondary">Certificados</a>
+  </div>
+  <div class="hero-socials">
+    <a href="https://github.com/Jonathanmerel" target="_blank">↗ GitHub</a>
+    <a href="https://www.linkedin.com/in/jonathan-merel-1747b426a/" target="_blank">↗ LinkedIn</a>
+    <a href="https://medium.com/@jonathanmerel" target="_blank">↗ Medium</a>
+  </div>
+</section>
+
+<div class="divider"><hr/></div>
+
+<!-- ── ABOUT ────────────────────────────────────────────── -->
+<section id="about">
+  <div class="section-label">01 — About</div>
+  <h2>Quién soy <em>realmente</em></h2>
+  <div class="about-grid">
+    <div class="about-text fade-in">
+      <p>
+        IT Support Analyst en Grupo Terrabona, donde administro Salesforce CRM en producción,
+        diseño integraciones en n8n y Zapier, y desarrollo agentes de IA conversacional que
+        califican leads sin intervención manual.
+      </p>
+      <p>
+        Construí TalosFlow — un agente de WhatsApp con IA que opera sobre una base de
+        conocimiento estructurada de seis proyectos inmobiliarios, captura datos de clientes
+        y alimenta el pipeline de ventas automáticamente.
+      </p>
+      <p>
+        Último año de Informática para la Gestión Empresarial en la Universidad de Panamá.
+        La IA no es un añadido — es el eje. Python, SQL y Power BI son la capa analítica
+        detrás de todo lo que ya está en producción.
+      </p>
+      <p>
+        La tecnología vale lo que produce en ventas y operaciones. Ese es mi terreno.
+      </p>
+    </div>
+    <div class="about-card fade-in">
+      <div class="about-card-title">// info.json</div>
+      <div class="info-item">
+        <span class="info-key">Rol actual</span>
+        <span class="info-val green">IT Support Analyst</span>
+      </div>
+      <div class="info-item">
+        <span class="info-key">Empresa</span>
+        <span class="info-val">Grupo Terrabona</span>
+      </div>
+      <div class="info-item">
+        <span class="info-key">Ubicación</span>
+        <span class="info-val">La Chorrera, Panamá</span>
+      </div>
+      <div class="info-item">
+        <span class="info-key">Formación</span>
+        <span class="info-val">Informática — UP</span>
+      </div>
+      <div class="info-item">
+        <span class="info-key">Meta</span>
+        <span class="info-val">MSc IA — Lakehead U.</span>
+      </div>
+      <div class="info-item">
+        <span class="info-key">Estado</span>
+        <span class="info-val green">Open to opportunities</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><hr/></div>
+
+<!-- ── SKILLS ───────────────────────────────────────────── -->
+<section id="skills">
+  <div class="section-label">02 — Skills</div>
+  <h2>Arsenal <em>técnico</em></h2>
+  <div class="skills-grid">
+
+    <div class="skill-card fade-in">
+      <div class="skill-cat">Automatización</div>
+      <div class="skill-name">Workflows & RPA</div>
+      <div class="skill-tags">
+        <span class="tag">n8n</span>
+        <span class="tag">Zapier</span>
+        <span class="tag">Webhooks</span>
+        <span class="tag">RPA</span>
+      </div>
+    </div>
+
+    <div class="skill-card fade-in">
+      <div class="skill-cat">CRM</div>
+      <div class="skill-name">Salesforce</div>
+      <div class="skill-tags">
+        <span class="tag">Admin</span>
+        <span class="tag">Flows</span>
+        <span class="tag">SOQL</span>
+        <span class="tag">Connected Apps</span>
+      </div>
+    </div>
+
+    <div class="skill-card fade-in">
+      <div class="skill-cat">IA & LLMs</div>
+      <div class="skill-name">Agentes & Prompts</div>
+      <div class="skill-tags">
+        <span class="tag">Prompt Engineering</span>
+        <span class="tag">Ollama</span>
+        <span class="tag">Open WebUI</span>
+      </div>
+    </div>
+
+    <div class="skill-card fade-in">
+      <div class="skill-cat">Datos</div>
+      <div class="skill-name">Analytics & BI</div>
+      <div class="skill-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">SQL</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">Excel/VBA</span>
+      </div>
+    </div>
+
+    <div class="skill-card fade-in">
+      <div class="skill-cat">Infraestructura</div>
+      <div class="skill-name">DevOps & Lab</div>
+      <div class="skill-tags">
+        <span class="tag">Docker</span>
+        <span class="tag">Tailscale VPN</span>
+        <span class="tag">GitHub</span>
+        <span class="tag">Portainer</span>
+      </div>
+    </div>
+
+    <div class="skill-card fade-in">
+      <div class="skill-cat">Workspace</div>
+      <div class="skill-name">Google & Collab</div>
+      <div class="skill-tags">
+        <span class="tag">Google Workspace Admin</span>
+        <span class="tag">Sheets API</span>
+        <span class="tag">Gmail API</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"><hr/></div>
+
+<!-- ── PROJECTS ──────────────────────────────────────────── -->
+<section id="projects">
+  <div class="section-label">03 — Projects</div>
+  <h2>Trabajo <em>destacado</em></h2>
+  <div class="projects-list">
+
+    <div class="project-card fade-in">
+      <div>
+        <div class="project-header">
+          <div class="project-title">TalosFlow</div>
+          <span class="badge badge-live">Live</span>
+          <span class="badge badge-prod">Producción</span>
         </div>
-    </nav>
- 
-    <!-- ── HERO ── -->
-    <section id="hero">
-        <div class="container hero-inner">
-            <div class="hero-content reveal">
-                <div class="hero-label">Panamá, PA — Disponible para oportunidades</div>
-                <h1 class="hero-name">
-                    Jonathan
-                    <span class="line2">Merel</span>
-                </h1>
-                <div class="hero-role">
-                    <span id="typed-text"></span><span class="typed-cursor"></span>
-                </div>
-                <p class="hero-desc">
-                    Estudiante de último año con enfoque en <strong>análisis de datos</strong> y
-                    <strong>Business Intelligence</strong>. Convierto hojas de cálculo caóticas y
-                    bases de datos en dashboards que ayudan a tomar mejores decisiones.
-                </p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn-primary">Ver proyectos <i class="fas fa-arrow-right"></i></a>
-                    <a href="#credentials" class="btn-secondary">Certificados <i class="fas fa-certificate"></i></a>
-                </div>
-            </div>
-            <div class="hero-visual reveal">
-                <!-- Mini dashboard decorativo -->
-                <div class="hero-dashboard">
-                    <div class="dash-bar">
-                        <div class="d-dot d-r"></div><div class="d-dot d-y"></div><div class="d-dot d-g"></div>
-                        <span class="dash-label">dashboard_ventas.pbix</span>
-                    </div>
-                    <div class="dash-body">
-                        <div class="dash-kpis">
-                            <div class="kpi-box">
-                                <span class="kpi-val">$2.4M</span>
-                                <span class="kpi-lbl">Ventas YTD</span>
-                                <span class="kpi-delta up">▲ 12%</span>
-                            </div>
-                            <div class="kpi-box">
-                                <span class="kpi-val">94%</span>
-                                <span class="kpi-lbl">Satisfacción</span>
-                                <span class="kpi-delta up">▲ 3%</span>
-                            </div>
-                            <div class="kpi-box">
-                                <span class="kpi-val">1,248</span>
-                                <span class="kpi-lbl">Clientes</span>
-                                <span class="kpi-delta down">▼ 2%</span>
-                            </div>
-                        </div>
-                        <div class="dash-chart">
-                            <div class="chart-bars">
-                                <div class="c-bar" style="height:55%"><span>Ene</span></div>
-                                <div class="c-bar" style="height:70%"><span>Feb</span></div>
-                                <div class="c-bar" style="height:45%"><span>Mar</span></div>
-                                <div class="c-bar" style="height:85%"><span>Abr</span></div>
-                                <div class="c-bar" style="height:65%"><span>May</span></div>
-                                <div class="c-bar active" style="height:95%"><span>Jun</span></div>
-                            </div>
-                        </div>
-                        <div class="dash-footer">
-                            <span class="df-tag">Power BI</span>
-                            <span class="df-tag">DAX</span>
-                            <span class="df-tag">SQL</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <p class="project-desc">
+          Agente de WhatsApp con IA para Grupo Terrabona. Responde consultas de clientes sobre
+          6 proyectos inmobiliarios, filtra leads por presupuesto e interés, y alimenta un
+          pipeline automatizado hacia Google Sheets con notificación al equipo de ventas vía
+          Gmail — sin intervención manual.
+        </p>
+        <div class="project-stack">
+          <span class="tag">n8n</span>
+          <span class="tag">Prompt Engineering</span>
+          <span class="tag">WhatsApp API</span>
+          <span class="tag">Webhooks</span>
+          <span class="tag">Google Sheets</span>
+          <span class="tag">Gmail API</span>
         </div>
-    </section>
+      </div>
+      <div class="project-num">01</div>
+    </div>
 
-    <!-- ── ABOUT ── -->
-    <section id="about">
-        <div class="container">
-            <div class="sec-label">01 — About</div>
-            <h2 class="sec-title">Quién soy <em>realmente</em></h2>
-            <div class="about-grid">
-                <div class="about-text reveal">
-                    <p>Soy estudiante de <strong>Informática para la Gestión Educativa y Empresarial</strong> en la Universidad de Panamá, en mi último año y actualmente realizando mi práctica profesional.</p>
-                    <p>Me especializo en convertir datos desordenados en <strong>reportes claros y dashboards accionables</strong>. Mi herramienta principal es <strong>Power BI</strong>, complementada con <strong>Excel avanzado</strong>, <strong>SQL</strong> y automatización con <strong>Python</strong>.</p>
-                    <p>Busco mi primera oportunidad formal en análisis de datos o Business Intelligence donde pueda crecer rápido y generar impacto real desde el primer día.</p>
-                    <div class="about-tags">
-                        <span class="tag">Power BI</span>
-                        <span class="tag">Excel Avanzado</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">DAX</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">Pandas</span>
-                        <span class="tag">Visualización de Datos</span>
-                        <span class="tag">ETL</span>
-                        <span class="tag">Reportería</span>
-                        <span class="tag">Análisis Financiero</span>
-                    </div>
-                    <a href="https://github.com/Jonathanmerel" target="_blank" class="btn-primary btn-github">
-                        <i class="fab fa-github"></i> Ver GitHub
-                    </a>
-                </div>
-                <div class="about-card reveal">
-                    <img src="191655148.png" alt="Jonathan Merel" class="about-photo">
-                    <div class="about-card-body">
-                        <div class="about-card-name">Jonathan Merel</div>
-                        <div class="about-card-role">// Data Analyst</div>
-                        <ul class="about-card-items">
-                            <li><i class="fas fa-map-marker-alt"></i> Panamá, PA</li>
-                            <li><i class="fas fa-graduation-cap"></i> Informática para Gestión — UP</li>
-                            <li><i class="fas fa-briefcase"></i> Práctica Profesional activa</li>
-                            <li><i class="fas fa-chart-bar"></i> Power BI & Excel Enthusiast</li>
-                            <li><i class="fas fa-search"></i> Open to work</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <div class="project-card fade-in">
+      <div>
+        <div class="project-header">
+          <div class="project-title">Laboratorio de IA Local</div>
+          <span class="badge badge-prod">Activo</span>
         </div>
-    </section>
-
-    <!-- ── SKILLS ── -->
-    <section id="skills">
-        <div class="container">
-            <div class="sec-label">02 — Skills</div>
-            <h2 class="sec-title">Arsenal <em>técnico</em></h2>
-            <div class="skills-grid reveal">
-
-                <div class="skill-block">
-                    <span class="skill-level in-progress">EN PROGRESO</span>
-                    <i class="fas fa-chart-bar skill-icon"></i>
-                    <h3>Power BI</h3>
-                    <p>Construcción de dashboards interactivos, medidas DAX, modelado de datos y conexión a múltiples fuentes.</p>
-                </div>
-
-                <div class="skill-block">
-                    <span class="skill-level intermedio">INTERMEDIO</span>
-                    <i class="fas fa-file-excel skill-icon" style="color:#1d6f42"></i>
-                    <h3>Excel Avanzado</h3>
-                    <p>Tablas dinámicas, fórmulas complejas, Power Query, macros VBA y automatización de reportes.</p>
-                </div>
-
-                <div class="skill-block">
-                    <span class="skill-level in-progress">EN PROGRESO</span>
-                    <i class="fas fa-database skill-icon"></i>
-                    <h3>SQL</h3>
-                    <p>Consultas avanzadas, JOINs, subconsultas, agregaciones y diseño de bases de datos relacionales.</p>
-                </div>
-
-                <div class="skill-block">
-                    <span class="skill-level in-progress">EN PROGRESO</span>
-                    <i class="fab fa-python skill-icon"></i>
-                    <h3>Python para Datos</h3>
-                    <p>Limpieza y transformación de datos con Pandas, automatización de reportes y análisis exploratorio.</p>
-                </div>
-
-                <div class="skill-block">
-                    <span class="skill-level in-progress">EN PROGRESO</span>
-                    <i class="fas fa-exchange-alt skill-icon"></i>
-                    <h3>ETL & Power Query</h3>
-                    <p>Extracción, transformación y carga de datos desde Excel, SQL y archivos CSV hacia modelos analíticos.</p>
-                </div>
-
-                <div class="skill-block">
-                    <span class="skill-level in-progress">EN PROGRESO</span>
-                    <i class="fas fa-chart-pie skill-icon"></i>
-                    <h3>Visualización</h3>
-                    <p>Diseño de reportes ejecutivos claros y accionables. Principios de storytelling con datos.</p>
-                </div>
-
-            </div>
+        <p class="project-desc">
+          Infraestructura Docker completa con modelos de lenguaje corriendo localmente. Stack:
+          Ollama, Open WebUI, n8n con PostgreSQL, Uptime Kuma y Portainer. Acceso remoto
+          seguro vía Tailscale VPN. Plataforma de experimentación para automatizaciones e IA
+          antes de llevarlas a producción.
+        </p>
+        <div class="project-stack">
+          <span class="tag">Docker</span>
+          <span class="tag">Ollama</span>
+          <span class="tag">Open WebUI</span>
+          <span class="tag">n8n</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Tailscale</span>
         </div>
-    </section>
+      </div>
+      <div class="project-num">02</div>
+    </div>
 
-    <!-- ── PROJECTS ── -->
-    <section id="projects">
-        <div class="container">
-            <div class="sec-label">03 — Projects</div>
-            <h2 class="sec-title">Trabajo <em>destacado</em></h2>
-            <div class="projects-grid">
-
-                <!-- Proyecto 1: Dashboard de Ventas Power BI -->
-                <div class="project-card reveal">
-                    <div class="proj-img proj-img-placeholder proj-img-bi">
-                        <i class="fas fa-chart-bar proj-placeholder-icon"></i>
-                        <div class="proj-img-overlay"></div>
-                    </div>
-                    <div class="proj-body">
-                        <div class="proj-tag">// Power BI · DAX · SQL</div>
-                        <h3 class="proj-title">Dashboard de Análisis de Ventas</h3>
-                        <p class="proj-desc">Dashboard interactivo en Power BI con KPIs de ventas, análisis por región y producto, tendencias mensuales y comparativas YoY usando DAX avanzado.</p>
-                        <div class="proj-links">
-                            <span class="proj-link proj-link-disabled"><i class="fas fa-code"></i> En construcción</span>
-                            <span class="proj-badge proj-badge-dev">WIP</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 2: Automatización Excel -->
-                <div class="project-card reveal">
-                    <div class="proj-img proj-img-placeholder proj-img-excel">
-                        <i class="fas fa-file-excel proj-placeholder-icon"></i>
-                        <div class="proj-img-overlay"></div>
-                    </div>
-                    <div class="proj-body">
-                        <div class="proj-tag">// Excel · Power Query · Python</div>
-                        <h3 class="proj-title">Automatización de Reportes Mensuales</h3>
-                        <p class="proj-desc">Sistema que consolida datos de múltiples hojas Excel, aplica transformaciones con Power Query y genera reportes ejecutivos de forma automática con Python.</p>
-                        <div class="proj-links">
-                            <span class="proj-link proj-link-disabled"><i class="fas fa-code"></i> En construcción</span>
-                            <span class="proj-badge proj-badge-dev">WIP</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 3: Análisis SQL + Power BI -->
-                <div class="project-card reveal">
-                    <div class="proj-img proj-img-placeholder proj-img-sql">
-                        <i class="fas fa-database proj-placeholder-icon"></i>
-                        <div class="proj-img-overlay"></div>
-                    </div>
-                    <div class="proj-body">
-                        <div class="proj-tag">// SQL · Power BI · Análisis Financiero</div>
-                        <h3 class="proj-title">Análisis de Cartera Financiera</h3>
-                        <p class="proj-desc">Pipeline completo desde consultas SQL a base de datos financiera hasta dashboard en Power BI con segmentación de clientes, morosidad y análisis de riesgo.</p>
-                        <div class="proj-links">
-                            <span class="proj-link proj-link-disabled"><i class="fas fa-code"></i> En construcción</span>
-                            <span class="proj-badge proj-badge-dev">WIP</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 4: CyberTips (mantener como muestra de iniciativa) -->
-                <div class="project-card reveal">
-                    <div class="proj-img">
-                        <img src="ProyectPort.png" alt="CyberTips">
-                        <div class="proj-img-overlay"></div>
-                    </div>
-                    <div class="proj-body">
-                        <div class="proj-tag">// Proyecto Web · Iniciativa propia</div>
-                        <h3 class="proj-title">CyberTips — Portal Educativo</h3>
-                        <p class="proj-desc">Sitio web con guías de seguridad informática. Muestra capacidad de aprender tecnologías nuevas de forma autónoma e implementarlas desde cero.</p>
-                        <div class="proj-links">
-                            <a href="https://jonathanmerel.github.io/CyberTips.github.io/" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <span class="proj-badge">LIVE</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Nota honesta sobre los proyectos WIP -->
-            <div class="projects-note reveal">
-                <i class="fas fa-info-circle"></i>
-                Los proyectos marcados como <strong>WIP</strong> están en construcción activa.
-                Estarán publicados en GitHub con datos reales en las próximas semanas.
-            </div>
+    <div class="project-card fade-in">
+      <div>
+        <div class="project-header">
+          <div class="project-title">Pipeline de Limpieza de Datos</div>
+          <span class="badge badge-prod">Completado</span>
         </div>
-    </section>
-
-    <!-- ── CREDENTIALS ── -->
-    <section id="credentials">
-        <div class="container">
-            <div class="sec-label">04 — Credentials</div>
-            <h2 class="sec-title">Títulos &amp; <em>Certificados</em></h2>
-
-            <div class="creds-filters reveal">
-                <button class="cred-filter-btn active" data-filter="all">Todos</button>
-                <button class="cred-filter-btn" data-filter="titulo">Títulos</button>
-                <button class="cred-filter-btn" data-filter="certificado">Certificados</button>
-                <button class="cred-filter-btn" data-filter="curso">Cursos</button>
-            </div>
-            <div class="creds-counter reveal">
-                Mostrando <span id="cred-count">0</span> credenciales
-            </div>
-
-            <div class="creds-grid">
-
-                <!-- TÍTULO ACADÉMICO -->
-                <div class="cred-card reveal" data-category="titulo">
-                    <span class="cred-badge verified">ACTIVO</span>
-                    <div class="cred-icon-wrap"><i class="fas fa-university"></i></div>
-                    <div class="cred-type">// Título Académico</div>
-                    <div class="cred-title">Licenciatura en Informática para la Gestión Educativa y Empresarial</div>
-                    <div class="cred-issuer">Universidad de Panamá — Sede Panamá Oeste</div>
-                    <div class="cred-meta">
-                        <span class="cred-date"><i class="fas fa-calendar-alt"></i> 2022 — 2026</span>
-                    </div>
-                    <div class="cred-skills">
-                        <span class="cred-skill-tag">Gestión TI</span>
-                        <span class="cred-skill-tag">Bases de Datos</span>
-                        <span class="cred-skill-tag">Análisis de Sistemas</span>
-                        <span class="cred-skill-tag">Programación</span>
-                    </div>
-                </div>
-
-                <!-- CERTIFICADO: Cybrary - Ethical Hacking Cloud -->
-                <div class="cred-card reveal" data-category="certificado">
-                    <span class="cred-badge verified">VERIFICADO</span>
-                    <div class="cred-icon-wrap"><i class="fas fa-shield-alt"></i></div>
-                    <div class="cred-type">// Certificado Profesional</div>
-                    <div class="cred-title">Ethical Hacking: Cloud Computing</div>
-                    <div class="cred-issuer">Cybrary · Plataforma de Ciberseguridad</div>
-                    <div class="cred-meta">
-                        <span class="cred-date"><i class="fas fa-calendar-alt"></i> Marzo 2025</span>
-                        <span class="cred-id">ID: CC-c9edea0d-4860-4ad8-85f7-97dd39e2f50b</span>
-                    </div>
-                    <div class="cred-skills">
-                        <span class="cred-skill-tag">Cloud Security</span>
-                        <span class="cred-skill-tag">Ethical Hacking</span>
-                        <span class="cred-skill-tag">Pentesting</span>
-                    </div>
-                </div>
-
-                <!-- CERTIFICADO: Google/Coursera - Security Risks -->
-                <div class="cred-card reveal" data-category="certificado">
-                    <span class="cred-badge verified">VERIFICADO</span>
-                    <div class="cred-icon-wrap"><i class="fab fa-google"></i></div>
-                    <div class="cred-type">// Certificado Profesional</div>
-                    <div class="cred-title">Play It Safe: Manage Security Risks</div>
-                    <div class="cred-issuer">Google · Coursera</div>
-                    <div class="cred-meta">
-                        <span class="cred-date"><i class="fas fa-calendar-alt"></i> Noviembre 2025</span>
-                        <span class="cred-id">ID: 43ML9H27IFE4</span>
-                    </div>
-                    <div class="cred-skills">
-                        <span class="cred-skill-tag">Gestión de Riesgos</span>
-                        <span class="cred-skill-tag">Ciberseguridad</span>
-                        <span class="cred-skill-tag">Seguridad TI</span>
-                    </div>
-                    <a href="https://coursera.org/verify/43ML9H27IFE4" class="cred-verify" target="_blank">
-                        <i class="fas fa-external-link-alt"></i> Verificar credencial
-                    </a>
-                </div>
-
-                <!-- CURSO: Anthropic - Claude Code in Action -->
-                <div class="cred-card reveal" data-category="curso">
-                    <span class="cred-badge verified">COMPLETADO</span>
-                    <div class="cred-icon-wrap"><i class="fas fa-robot"></i></div>
-                    <div class="cred-type">// Curso Especializado</div>
-                    <div class="cred-title">Claude Code in Action</div>
-                    <div class="cred-issuer">Anthropic · Plataforma de IA</div>
-                    <div class="cred-meta">
-                        <span class="cred-date"><i class="fas fa-calendar-alt"></i> Marzo 2026</span>
-                        <span class="cred-id">ID: 7innh6a58bqy</span>
-                    </div>
-                    <div class="cred-skills">
-                        <span class="cred-skill-tag">Claude AI</span>
-                        <span class="cred-skill-tag">Coding Assistant</span>
-                        <span class="cred-skill-tag">IA Generativa</span>
-                    </div>
-                        <a href="https://verify.skilljar.com/c/7innh6a58bqy" class="cred-verify" target="_blank">
-                        <i class="fas fa-external-link-alt"></i> Verificar credencial
-                        </a>
-                </div>
-                
-                <!-- CURSO: Anthropic - Claude 101 -->
-                <div class="cred-card reveal" data-category="curso">
-                    <span class="cred-badge verified">COMPLETADO</span>
-                    <div class="cred-icon-wrap"><i class="fas fa-brain"></i></div>
-                    <div class="cred-type">// Curso Especializado</div>
-                    <div class="cred-title">IA Conversacional</div>
-                    <div class="cred-issuer">Dominio práctico con Claude AI · Usado en entornos reales de negocio</div>
-                    <div class="cred-meta">
-                        <span class="cred-date"><i class="fas fa-calendar-alt"></i> 2026</span>
-                        <span class="cred-id">ID: 9xmd5kc62g5h</span>
-                    </div>
-                    <div class="cred-skills">
-                        <span class="cred-skill-tag">LLMs</span>
-                        <span class="cred-skill-tag">Prompt Engineering</span>
-                        <span class="cred-skill-tag">Automation</span>
-                    </div>
-                       <a href="https://verify.skilljar.com/c/9xmd5kc62g5h" class="cred-verify" target="_blank">
-                       <i class="fas fa-external-link-alt"></i> Verificar credencial
-                       </a>
-                    </div> 
-                </div>
-         </section>
-
-    <!-- ── TERMINAL / BIO ── -->
-    <section id="terminal-sec">
-        <div class="container">
-            <div class="sec-label">05 — Bio</div>
-            <h2 class="sec-title">En <em>código</em></h2>
-            <div class="terminal-wrap reveal">
-                <div class="terminal-bar">
-                    <div class="t-dot t-dot-r"></div>
-                    <div class="t-dot t-dot-y"></div>
-                    <div class="t-dot t-dot-g"></div>
-                    <div class="t-title">jonathan@portfolio:~</div>
-                </div>
-                <div class="terminal-body">
-                    <div class="t-line"><span class="t-prompt">jonathan@portfolio:~$ </span><span class="t-cmd">cat about_me.json</span></div>
-                    <div class="t-line"><span class="t-out">{</span></div>
-                    <div class="t-line">&nbsp;&nbsp;<span class="t-key">"name"</span>: <span class="t-out">"Jonathan Merel"</span>,</div>
-                    <div class="t-line">&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-out">"Data Analyst"</span>,</div>
-                    <div class="t-line">&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-out">"Panamá, PA"</span>,</div>
-                    <div class="t-line">&nbsp;&nbsp;<span class="t-key">"tools"</span>: [<span class="t-out">"Power BI"</span>, <span class="t-out">"Excel"</span>, <span class="t-out">"SQL"</span>, <span class="t-out">"Python"</span>],</div>
-                    <div class="t-line">&nbsp;&nbsp;<span class="t-key">"objetivo"</span>: <span class="t-out">"Primer empleo en datos en Panamá"</span>,</div>
-                    <div class="t-line">&nbsp;&nbsp;<span class="t-key">"status"</span>: <span class="t-out">"Open to work · Practicante activo"</span>,</div>
-                    <div class="t-line">&nbsp;&nbsp;<span class="t-key">"aprendiendo"</span>: [<span class="t-out">"DAX avanzado"</span>, <span class="t-out">"Power Query"</span>, <span class="t-out">"Storytelling con datos"</span>],</div>
-                    <div class="t-line">&nbsp;&nbsp;<span class="t-key">"coffee_dependency"</span>: <span class="t-out">true</span></div>
-                    <div class="t-line"><span class="t-out">}</span></div>
-                    <div class="t-line t-spacer"><span class="t-prompt">jonathan@portfolio:~$ </span><span class="t-cmd">python3 generar_reporte.py</span></div>
-                    <div class="t-line"><span class="t-comment"># Cargando datos...</span></div>
-                    <div class="t-line"><span class="t-out">✓ Reporte generado. Listo para colaborar.</span></div>
-                    <div class="t-line"><span class="t-prompt">jonathan@portfolio:~$ </span><span class="t-blink-cursor"></span></div>
-                </div>
-            </div>
+        <p class="project-desc">
+          Script Python para procesamiento de 300+ registros de ventas. Incluye deduplicación
+          por múltiples criterios, normalización de campos, validación de formatos y exportación
+          a Excel con KPIs calculados automáticamente. Reduce horas de trabajo manual a minutos.
+        </p>
+        <div class="project-stack">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">Excel/openpyxl</span>
+          <span class="tag">ETL</span>
         </div>
-    </section>
+      </div>
+      <div class="project-num">03</div>
+    </div>
 
-    <!-- ── FOOTER ── -->
-    <footer>
-        <div class="container footer-inner">
-            <div class="footer-logo"><strong>&lt;JM/&gt;</strong> — Jonathan Merel · Data Analyst</div>
-            <div class="footer-right">© 2026 — Panamá</div>
+    <div class="project-card fade-in">
+      <div>
+        <div class="project-header">
+          <div class="project-title">CyberTips — Portal Educativo</div>
+          <span class="badge badge-live">Live</span>
         </div>
-    </footer>
+        <p class="project-desc">
+          Sitio web con guías de seguridad informática construido desde cero. Iniciativa propia
+          que demuestra capacidad de aprender e implementar nuevas tecnologías de forma autónoma.
+        </p>
+        <div class="project-stack">
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">GitHub Pages</span>
+        </div>
+      </div>
+      <div class="project-num">04</div>
+    </div>
 
-    <script src="script.js"></script>
+  </div>
+</section>
 
-    <script>
-        (function () {
-            const filterBtns = document.querySelectorAll('.cred-filter-btn');
-            const cards      = document.querySelectorAll('.cred-card');
-            const countEl    = document.getElementById('cred-count');
+<div class="divider"><hr/></div>
 
-            function updateCount() {
-                const visible = document.querySelectorAll('.cred-card:not(.hidden)').length;
-                if (countEl) countEl.textContent = visible;
-            }
+<!-- ── CREDENTIALS ───────────────────────────────────────── -->
+<section id="credentials">
+  <div class="section-label">04 — Credentials</div>
+  <h2>Títulos & <em>Certificados</em></h2>
+  <div class="creds-grid">
 
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    filterBtns.forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    const filter = btn.dataset.filter;
-                    cards.forEach(card => {
-                        if (filter === 'all' || card.dataset.category === filter) {
-                            card.classList.remove('hidden');
-                        } else {
-                            card.classList.add('hidden');
-                        }
-                    });
-                    updateCount();
-                });
-            });
+    <div class="cred-card fade-in">
+      <span class="cred-badge active">Activo</span>
+      <div class="cred-type">// Título Académico</div>
+      <div class="cred-title">Licenciatura en Informática para la Gestión Educativa y Empresarial</div>
+      <div class="cred-issuer">Universidad de Panamá — Sede Panamá Oeste</div>
+      <div class="cred-date">2022 — 2026</div>
+      <div class="skill-tags">
+        <span class="tag">Gestión TI</span>
+        <span class="tag">Bases de Datos</span>
+        <span class="tag">Programación</span>
+      </div>
+    </div>
 
-            updateCount();
-        })();
-    </script>
+    <div class="cred-card fade-in">
+      <span class="cred-badge verified">Verificado</span>
+      <div class="cred-type">// Certificado Profesional</div>
+      <div class="cred-title">Play It Safe: Manage Security Risks</div>
+      <div class="cred-issuer">Google · Coursera</div>
+      <div class="cred-date">Noviembre 2025</div>
+      <div class="cred-id">ID: 43ML9H27IFE4</div>
+      <a href="https://coursera.org/verify/43ML9H27IFE4" target="_blank" class="cred-link">↗ Verificar</a>
+    </div>
+
+    <div class="cred-card fade-in">
+      <span class="cred-badge verified">Verificado</span>
+      <div class="cred-type">// Certificado Profesional</div>
+      <div class="cred-title">Ethical Hacking: Cloud Computing</div>
+      <div class="cred-issuer">Cybrary</div>
+      <div class="cred-date">Marzo 2025</div>
+      <div class="cred-id">ID: CC-c9edea0d-4860-4ad8-85f7-97dd39e2f50b</div>
+    </div>
+
+    <div class="cred-card fade-in">
+      <span class="cred-badge completed">Completado</span>
+      <div class="cred-type">// Curso Especializado</div>
+      <div class="cred-title">Claude Code in Action</div>
+      <div class="cred-issuer">Anthropic</div>
+      <div class="cred-date">Marzo 2026</div>
+      <div class="cred-id">ID: 7innh6a58bqy</div>
+      <a href="https://verify.skilljar.com/c/7innh6a58bqy" target="_blank" class="cred-link">↗ Verificar</a>
+    </div>
+
+    <div class="cred-card fade-in">
+      <span class="cred-badge completed">Completado</span>
+      <div class="cred-type">// Curso Especializado</div>
+      <div class="cred-title">IA Conversacional — Dominio con Claude AI</div>
+      <div class="cred-issuer">Anthropic · Skilljar</div>
+      <div class="cred-date">2026</div>
+      <div class="cred-id">ID: 9xmd5kc62g5h</div>
+      <a href="https://verify.skilljar.com/c/9xmd5kc62g5h" target="_blank" class="cred-link">↗ Verificar</a>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"><hr/></div>
+
+<!-- ── TERMINAL BIO ──────────────────────────────────────── -->
+<section id="terminal">
+  <div class="section-label">05 — Bio</div>
+  <h2>En <em>código</em></h2>
+  <div class="terminal-window fade-in">
+    <div class="terminal-bar">
+      <div class="dot dot-red"></div>
+      <div class="dot dot-yellow"></div>
+      <div class="dot dot-green"></div>
+      <span class="terminal-title">jonathan@portfolio:~</span>
+    </div>
+    <div class="terminal-body">
+      <div><span class="t-prompt">jonathan@portfolio</span><span class="t-comment">:~$</span> <span class="t-cmd">cat about_me.json</span></div>
+      <br/>
+      <div>{</div>
+      <div>&nbsp;&nbsp;<span class="t-key">"name"</span>: <span class="t-str">"Jonathan Merel"</span>,</div>
+      <div>&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-str">"IT Support Analyst"</span>,</div>
+      <div>&nbsp;&nbsp;<span class="t-key">"company"</span>: <span class="t-str">"Grupo Terrabona"</span>,</div>
+      <div>&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-str">"La Chorrera, Panamá"</span>,</div>
+      <div>&nbsp;&nbsp;<span class="t-key">"stack"</span>: [<span class="t-str">"n8n"</span>, <span class="t-str">"Salesforce"</span>, <span class="t-str">"Zapier"</span>, <span class="t-str">"Python"</span>, <span class="t-str">"Docker"</span>],</div>
+      <div>&nbsp;&nbsp;<span class="t-key">"building"</span>: <span class="t-str">"TalosFlow — AI WhatsApp agent for real estate"</span>,</div>
+      <div>&nbsp;&nbsp;<span class="t-key">"objetivo"</span>: <span class="t-str">"MSc IA — Lakehead University, Canadá"</span>,</div>
+      <div>&nbsp;&nbsp;<span class="t-key">"idiomas"</span>: [<span class="t-str">"Español (nativo)"</span>, <span class="t-str">"Inglés (intermedio)"</span>, <span class="t-str">"Francés (básico)"</span>],</div>
+      <div>&nbsp;&nbsp;<span class="t-key">"open_to_work"</span>: <span class="t-bool">true</span>,</div>
+      <div>&nbsp;&nbsp;<span class="t-key">"coffee_dependency"</span>: <span class="t-bool">true</span></div>
+      <div>}</div>
+      <br/>
+      <div><span class="t-prompt">jonathan@portfolio</span><span class="t-comment">:~$</span> <span class="t-cmd">python3 run_pipeline.py</span></div>
+      <div><span class="t-comment"># Iniciando TalosFlow...</span></div>
+      <div><span class="t-success">✓</span> Agente conectado · Leads activos · Pipeline corriendo</div>
+      <div><span class="t-success">✓</span> Sistemas operativos. Listo para colaborar.</div>
+      <br/>
+      <div><span class="t-prompt">jonathan@portfolio</span><span class="t-comment">:~$</span> <span class="t-cursor"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────────────── -->
+<footer>
+  <span>&lt;JM/&gt; — Jonathan Merel · IT Automation & AI</span>
+  <div style="display:flex;gap:20px;">
+    <a href="https://github.com/Jonathanmerel" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/jonathan-merel-1747b426a/" target="_blank">LinkedIn</a>
+    <a href="https://medium.com/@jonathanmerel" target="_blank">Medium</a>
+  </div>
+  <span>© 2026 — Panamá</span>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
